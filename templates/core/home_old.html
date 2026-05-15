@@ -1,0 +1,246 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Accueil - Portail Ministère Enseignement Supérieur{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <h1 class="display-4 fw-bold mb-4">
+                    Ministère de l'Enseignement Supérieur
+                </h1>
+                <p class="lead mb-4">
+                    Bienvenue sur le portail officiel de l'enseignement supérieur du Gabon.
+                    Explorez les établissements, filières et ressources éducatives à travers les 9 provinces.
+                </p>
+                <div class="d-flex gap-3">
+                    <a href="#provinces" class="btn btn-light btn-lg">
+                        <i class="fas fa-compass me-2"></i>Explorer les Provinces
+                    </a>
+                    {% if not user.is_authenticated %}
+                    <a href="{% url 'core:login' %}" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-sign-in-alt me-2"></i>Se Connecter
+                    </a>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-lg-4 text-center">
+                <i class="fas fa-university" style="font-size: 8rem; opacity: 0.3;"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Statistics Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="stats-card">
+                    <i class="fas fa-map mb-3"></i>
+                    <h3 class="fw-bold">{{ provinces|length }}</h3>
+                    <p class="text-muted mb-0">Provinces</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stats-card">
+                    <i class="fas fa-city mb-3"></i>
+                    <h3 class="fw-bold">{{ total_villes }}</h3>
+                    <p class="text-muted mb-0">Villes</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stats-card">
+                    <i class="fas fa-graduation-cap mb-3"></i>
+                    <h3 class="fw-bold">{{ total_etablissements }}</h3>
+                    <p class="text-muted mb-0">Établissements</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stats-card">
+                    <i class="fas fa-book mb-3"></i>
+                    <h3 class="fw-bold">{{ total_filieres }}</h3>
+                    <p class="text-muted mb-0">Filières</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Ministre Section -->
+<section class="py-5 bg-white">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                <div class="position-relative d-inline-block">
+                    <img src="{% static 'images/Camelia-Ntoutoume-Leclercq.jpg.jpeg' %}" alt="Ministre"
+                        class="img-fluid rounded-circle shadow">
+                    <div class="position-absolute bottom-0 end-0 bg-primary text-white rounded-circle p-2">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <h2 class="fw-bold mb-4">Message du Ministre</h2>
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <h5 class="card-title text-primary"> Excellence et Innovation dans l'Éducation</h5>
+                        <p class="card-text">
+                            Chers étudiants, enseignants et partenaires de l'éducation,
+                        </p>
+                        <p class="card-text">
+                            Le Ministère de l'Enseignement Supérieur s'engage à fournir un système éducatif
+                            de qualité qui répond aux besoins de développement du Gabon. Notre portail
+                            facilite l'accès à l'information et aux ressources éducatives à travers tout le territoire
+                            national.
+                        </p>
+                        <p class="card-text">
+                            Ensemble, construisons l'avenir de l'éducation supérieure au Gabon.
+                        </p>
+                        <p class="card-text mb-0">
+                            <strong>Le Ministre de l'Enseignement Supérieur</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Missions Section -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-5">Nos Missions</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-graduation-cap text-primary mb-3" style="font-size: 3rem;"></i>
+                        <h5 class="card-title">Formation</h5>
+                        <p class="card-text">
+                            Assurer une formation supérieure de qualité adaptée aux besoins du marché du travail
+                            et au développement national.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-flask text-success mb-3" style="font-size: 3rem;"></i>
+                        <h5 class="card-title">Recherche</h5>
+                        <p class="card-text">
+                            Promouvoir la recherche scientifique et l'innovation pour répondre aux défis
+                            technologiques et sociétaux.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-handshake text-info mb-3" style="font-size: 3rem;"></i>
+                        <h5 class="card-title">Partenariat</h5>
+                        <p class="card-text">
+                            Développer des collaborations nationales et internationales pour enrichir
+                            notre système éducatif.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Provinces Section -->
+<section id="provinces" class="py-5 bg-white">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-5">Explorer par Province</h2>
+        <div class="row g-4">
+            {% for province in provinces %}
+            <div class="col-md-4">
+                <div class="province-card p-4 text-center"
+                    onclick="window.location.href='{% url 'core:province_detail' province.id %}'">
+                    <i class="fas fa-map-marker-alt mb-3" style="font-size: 2.5rem;"></i>
+                    <h4 class="fw-bold">{{ province.nom_province }}</h4>
+                    <p class="mb-0">{{ province.villes.all|length }} ville(s)</p>
+                    <small class="opacity-75">{{ province.code_province }}</small>
+                </div>
+            </div>
+            {% empty %}
+            <div class="col-12 text-center">
+                <p class="text-muted">Aucune province disponible pour le moment.</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- News Section -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-5">Actualités</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/400x200/667eea/ffffff?text=Nouvelles" class="card-img-top"
+                        alt="Actualité">
+                    <div class="card-body">
+                        <h5 class="card-title">Nouveau Portail Éducatif</h5>
+                        <p class="card-text">
+                            Lancement du nouveau portail numérique pour faciliter l'accès aux ressources
+                            éducatives à travers le Gabon.
+                        </p>
+                        <small class="text-muted">Il y a 2 jours</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/400x200/764ba2/ffffff?text=Formation" class="card-img-top"
+                        alt="Formation">
+                    <div class="card-body">
+                        <h5 class="card-title">Programmes de Formation</h5>
+                        <p class="card-text">
+                            Nouveaux programmes de formation alignés sur les besoins du marché
+                            de l'emploi gabonais.
+                        </p>
+                        <small class="text-muted">Il y a 1 semaine</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/400x200/667eea/ffffff?text=Partenariat" class="card-img-top"
+                        alt="Partenariat">
+                    <div class="card-body">
+                        <h5 class="card-title">Partenariats Internationaux</h5>
+                        <p class="card-text">
+                            Signature de nouveaux accords de coopération avec des universités
+                            étrangères prestigieuses.
+                        </p>
+                        <small class="text-muted">Il y a 2 semaines</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+{% endblock %}

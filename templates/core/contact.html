@@ -1,0 +1,176 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact - Portail Ministère Enseignement Supérieur{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section py-3">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <h1 class="h2 fw-bold mb-2">Contactez-nous</h1>
+                <p class="mb-0">
+                    Nous sommes à votre disposition pour répondre à toutes vos questions
+                </p>
+            </div>
+            <div class="col-lg-4">
+                <div class="text-center">
+                    <i class="fas fa-envelope fa-1x text-white"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Main Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8">
+            <!-- Formulaire de Contact -->
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">
+                        <i class="fas fa-envelope me-2"></i>
+                        Envoyez-nous un message
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <form method="post" action="{% url 'core:contact' %}">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-2">
+                                    <label for="nom" class="form-label small">Nom complet *</label>
+                                    <input type="text" class="form-control form-control-sm" id="nom" name="nom" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-2">
+                                    <label for="email" class="form-label small">Email *</label>
+                                    <input type="email" class="form-control form-control-sm" id="email" name="email" required>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-2">
+                            <label for="sujet" class="form-label small">Sujet *</label>
+                            <input type="text" class="form-control form-control-sm" id="sujet" name="sujet" required>
+                        </div>
+                        
+                        <div class="mb-2">
+                            <label for="message" class="form-label small">Message *</label>
+                            <textarea class="form-control form-control-sm" id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane me-2"></i>
+                                Envoyer le message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4">
+            <!-- Informations de Contact -->
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">
+                        <i class="fas fa-info-circle me-2"></i>
+                        Informations de Contact
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="contact-info">
+                        <div class="contact-item mb-3">
+                            <h6 class="mb-1"><i class="fas fa-building me-2"></i>Adresse</h6>
+                            <p class="mb-0 small">Ministère de l'Enseignement Supérieur<br>
+                            Avenue du Ministère<br>
+                            Libreville, Gabon</p>
+                        </div>
+                        
+                        <div class="contact-item mb-3">
+                            <h6 class="mb-1"><i class="fas fa-phone me-2"></i>Téléphone</h6>
+                            <p class="mb-0 small">+241 01 73 45 67</p>
+                        </div>
+                        
+                        <div class="contact-item mb-3">
+                            <h6 class="mb-1"><i class="fas fa-envelope me-2"></i>Email</h6>
+                            <p class="mb-0 small">contact@enseignement-supérieur.ga</p>
+                        </div>
+                        
+                        <div class="contact-item mb-3">
+                            <h6 class="mb-1"><i class="fas fa-clock me-2"></i>Heures d'ouverture</h6>
+                            <p class="mb-0 small">Lundi - Vendredi : 8h00 - 16h00<br>
+                            Samedi : 8h00 - 12h00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+.contact-info {
+    padding: 1rem;
+}
+
+.contact-item {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.contact-item:last-child {
+    border-bottom: none;
+}
+
+.contact-item h6 {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.contact-item p {
+    color: #666;
+    margin: 0;
+    line-height: 1.5;
+}
+
+</style>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('Contact page loaded');
+    
+    const form = document.querySelector('form');
+    if (form) {
+        form.addEventListener('submit', function(e) {
+            const nom = document.getElementById('nom').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const sujet = document.getElementById('sujet').value.trim();
+            const message = document.getElementById('message').value.trim();
+            
+            if (!nom || !email || !sujet || !message) {
+                e.preventDefault();
+                alert('Veuillez remplir tous les champs obligatoires');
+                return false;
+            }
+            
+            if (!email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
+                e.preventDefault();
+                alert('Veuillez entrer une adresse email valide');
+                return false;
+            }
+        });
+    }
+});
+</script>
+{% endblock %}

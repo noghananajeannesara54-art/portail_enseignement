@@ -1,0 +1,199 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ ville.nom_ville }} - Portail Ministère Enseignement Supérieur{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <!-- Sidebar -->
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">
+                        <i class="fas fa-map me-2"></i>
+                        Provinces
+                    </h5>
+                </div>
+                <div class="list-group list-group-flush">
+                    {% for province_item in provinces %}
+                        <a href="{% url 'core:province_detail' province_item.pk %}" 
+                           class="list-group-item list-group-item-action {% if province_item.pk == ville.province.pk %}active{% endif %}">
+                            {{ province_item.nom_province }}
+                        </a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-9">
+            <!-- City Header -->
+            <div class="card mb-4">
+                <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                    <h4 class="mb-0">
+                        <i class="fas fa-city me-2"></i>
+                        {{ ville.nom_ville }}
+                    </h4>
+                    {% if user.is_authenticated and user.is_staff %}
+                        <a href="{% url 'core:edit_ville' ville.pk %}" class="btn btn-sm btn-warning">
+                            <i class="fas fa-edit"></i> Modifier
+                        </a>
+                    {% endif %}
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h5 class="text-primary">Province: {{ ville.province.nom_province }}</h5>
+                            {% if ville.description %}
+                                <p>{{ ville.description }}</p>
+                            {% else %}
+                                <p class="text-muted">Aucune description disponible.</p>
+                            {% endif %}
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <h6 class="text-muted">Statistiques</h6>
+                                <div class="row mt-3">
+                                    <div class="col-md-6">
+                                        <div class="text-center">
+                                            <h4 class="text-primary">{{ ville.etablissements.count }}</h4>
+                                            <p class="text-muted mb-0">Établissements</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="text-center">
+                                            <h4 class="text-success">0</h4>
+                                            <p class="text-muted mb-0">Filières</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Establishments List -->
+            <div class="card">
+                <div class="card-header bg-secondary text-white">
+                    <h5 class="mb-0">
+                        <i class="fas fa-graduation-cap me-2"></i>
+                        Établissements de la ville
+                    </h5>
+                </div>
+                <div class="card-body">
+                    {% if etablissements %}
+                        <div class="row g-4">
+                            {% for etablissement in etablissements %}
+                                <div class="col-md-6">
+                                    <div class="card h-100 border-0 shadow-sm">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                                <h6 class="card-title mb-0">
+                                                    <i class="fas fa-graduation-cap text-primary me-2"></i>
+                                                    {{ etablissement.nom_etab }}
+                                                </h6>
+                                                <span class="badge {% if etablissement.type_etab == 'public' %}bg-primary{% else %}bg-secondary{% endif %}">
+                                                    {{ etablissement.get_type_etab_display }}
+                                                </span>
+                                            </div>
+                                            
+                                            {% if etablissement.description %}
+                                                <p class="card-text small text-muted">{{ etablissement.description|truncatewords:15 }}</p>
+                                            {% endif %}
+                                            
+                                            {% if etablissement.adresse %}
+                                                <p class="card-text small">
+                                                    <i class="fas fa-map-marker-alt text-muted me-1"></i>
+                                                    {{ etablissement.adresse }}
+                                                </p>
+                                            {% endif %}
+                                            
+                                            {% if etablissement.telephone %}
+                                                <p class="card-text small">
+                                                    <i class="fas fa-phone text-muted me-1"></i>
+                                                    {{ etablissement.telephone }}
+                                                </p>
+                                            {% endif %}
+                                            
+                                            {% if etablissement.email %}
+                                                <p class="card-text small">
+                                                    <i class="fas fa-envelope text-muted me-1"></i>
+                                                    {{ etablissement.email }}
+                                                </p>
+                                            {% endif %}
+                                            
+                                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                                <small class="text-muted">
+                                                    <i class="fas fa-book me-1"></i>
+                                                    {{ etablissement.filieres.count }} filières
+                                                </small>
+                                                <a href="{% url 'core:etablissement_detail' etablissement.pk %}" class="btn btn-sm btn-outline-primary">
+                                                    Voir détails
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        <div class="text-center py-4">
+                            <i class="fas fa-graduation-cap text-muted" style="font-size: 3rem;"></i>
+                            <p class="text-muted mt-3">Aucun établissement enregistré pour cette ville.</p>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+            
+            <!-- Quick Actions for Staff -->
+            {% if user.is_authenticated and user.is_staff %}
+                <div class="card mt-4">
+                    <div class="card-header bg-warning text-dark">
+                        <h5 class="mb-0">
+                            <i class="fas fa-tools me-2"></i>
+                            Actions rapides
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3 mb-2">
+                                <a href="{% url 'admin:core_etablissement_add' %}" class="btn btn-outline-primary btn-sm w-100">
+                                    <i class="fas fa-plus me-1"></i>
+                                    Ajouter un établissement
+                                </a>
+                            </div>
+                            <div class="col-md-3 mb-2">
+                                <a href="{% url 'admin:core_filiere_add' %}" class="btn btn-outline-success btn-sm w-100">
+                                    <i class="fas fa-plus me-1"></i>
+                                    Ajouter une filière
+                                </a>
+                            </div>
+                            <div class="col-md-3 mb-2">
+                                <a href="{% url 'admin:core_ville_changelist' %}" class="btn btn-outline-info btn-sm w-100">
+                                    <i class="fas fa-cog me-1"></i>
+                                    Gérer les villes
+                                </a>
+                            </div>
+                            <div class="col-md-3 mb-2">
+                                <a href="{% url 'admin:index' %}" class="btn btn-outline-secondary btn-sm w-100">
+                                    <i class="fas fa-tachometer-alt me-1"></i>
+                                    Administration
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+// Simple statistics display
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('City details loaded');
+});
+</script>
+{% endblock %}

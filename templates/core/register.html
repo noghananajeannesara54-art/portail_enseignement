@@ -1,0 +1,173 @@
+{% extends 'base.html' %}
+
+{% block title %}Inscription - Portail Ministère Enseignement Supérieur{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-10 col-lg-8">
+            <div class="card border-0 shadow-sm">
+                <div class="card-header bg-white border-bottom">
+                    <h4 class="mb-0 text-dark">
+                        Inscription
+                    </h4>
+                    <p class="text-muted mb-0">Créez votre compte pour accéder à la plateforme</p>
+                </div>
+
+                <div class="card-body p-4">
+
+                    {% if messages %}
+                        {% for message in messages %}
+                            <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+                                {{ message }}
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+
+                    {# 🔴 AFFICHAGE DES ERREURS IMPORTANT #}
+                    {% if user_form.errors %}
+                        <div class="alert alert-danger">
+                            {{ user_form.errors }}
+                        </div>
+                    {% endif %}
+
+                    {% if inscription_form.errors %}
+                        <div class="alert alert-danger">
+                            {{ inscription_form.errors }}
+                        </div>
+                    {% endif %}
+
+                    <form method="post" action="{% url 'core:register' %}" id="registrationForm">
+                        {% csrf_token %}
+                        
+                        <!-- Informations de compte -->
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+
+                                <h6 class="text-dark mb-3">Informations du compte</h6>
+
+                                <div class="mb-3">
+                                    <label class="form-label">Nom d'utilisateur *</label>
+                                    {{ user_form.username }}
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label">Email *</label>
+                                    {{ user_form.email }}
+                                </div>
+
+                                {# 🔥 AJOUT IMPORTANT #}
+                                <div class="mb-3">
+                                    <label class="form-label">Prénom *</label>
+                                    {{ user_form.first_name }}
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label">Nom *</label>
+                                    {{ user_form.last_name }}
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label">Mot de passe *</label>
+                                    {{ user_form.password1 }}
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label">Confirmer le mot de passe *</label>
+                                    {{ user_form.password2 }}
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <h6 class="text-dark mb-3">Informations personnelles</h6>
+
+                                <div class="mb-3">
+                                    <label class="form-label">Téléphone</label>
+                                    {{ inscription_form.telephone }}
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label">Date de naissance</label>
+                                    {{ inscription_form.date_naissance }}
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label">Lieu de naissance</label>
+                                    {{ inscription_form.lieu_naissance }}
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label">Nationalité</label>
+                                    {{ inscription_form.nationalite }}
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Informations académiques -->
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <h6 class="text-dark mb-3">Informations académiques</h6>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label">Niveau d'étude</label>
+                                    {{ inscription_form.niveau_etude }}
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label">Établissement d'origine</label>
+                                    {{ inscription_form.etablissement_origine }}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center mt-4">
+                            <button type="submit" class="btn btn-primary">
+                                S'inscrire
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <p class="text-muted">
+                    Vous avez déjà un compte ? 
+                    <a href="{% url 'core:login' %}">Connectez-vous ici</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+.card {
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
+
+.form-control {
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+    padding: 10px 12px;
+}
+
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.form-label {
+    font-weight: 500;
+    color: #495057;
+    margin-bottom: 6px;
+}
+</style>
+{% endblock %}

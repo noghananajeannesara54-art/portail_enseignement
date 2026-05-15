@@ -1,0 +1,214 @@
+{% extends 'base.html' %}
+
+{% block title %}Missions - Portail Ministère Enseignement Supérieur{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section py-3">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <h1 class="h2 fw-bold mb-2">Nos Missions</h1>
+                <p class="mb-0">
+                    Découvrez les missions principales du Ministère de l'Enseignement Supérieur
+                </p>
+            </div>
+            <div class="col-lg-4">
+                <div class="text-center">
+                    <i class="fas fa-bullseye fa-1x text-white"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Main Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">
+                        <i class="fas fa-tasks me-2"></i>
+                        Missions Principales
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mission-item">
+                                <div class="mission-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="mission-content">
+                                    <h6>Formation Supérieure</h6>
+                                    <p>Assurer la formation et le développement des compétences des étudiants gabonais à tous les niveaux de l'enseignement supérieur.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mission-item">
+                                <div class="mission-icon">
+                                    <i class="fas fa-microscope"></i>
+                                </div>
+                                <div class="mission-content">
+                                    <h6>Recherche Scientifique</h6>
+                                    <p>Promouvoir et coordonner la recherche scientifique et technologique pour répondre aux besoins du développement national.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mission-item">
+                                <div class="mission-icon">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                                <div class="mission-content">
+                                    <h6>Coopération Internationale</h6>
+                                    <p>Développer les partenariats et les échanges académiques avec les institutions étrangères.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mission-item">
+                                <div class="mission-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div class="mission-content">
+                                    <h6>Évaluation et Qualité</h6>
+                                    <p>Garantir la qualité de l'enseignement supérieur et l'adéquation des formations aux besoins du marché du travail.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mission-item">
+                                <div class="mission-icon">
+                                    <i class="fas fa-handshake"></i>
+                                </div>
+                                <div class="mission-content">
+                                    <h6>Partenariats Public-Privé</h6>
+                                    <p>Favoriser la collaboration entre le secteur public et le secteur privé pour le développement de l'enseignement supérieur.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">
+                        <i class="fas fa-info-circle me-2"></i>
+                        Informations Clés
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="info-item">
+                        <h6><i class="fas fa-building me-2"></i>Établissements</h6>
+                        <p>Plus de 50 établissements publics et privés répartis sur tout le territoire national.</p>
+                    </div>
+                    <div class="info-item">
+                        <h6><i class="fas fa-users me-2"></i>Étudiants</h6>
+                        <p>Des dizaines de milliers d'étudiants inscrits dans nos différentes filières d'études.</p>
+                    </div>
+                    <div class="info-item">
+                        <h6><i class="fas fa-chalkboard-teacher me-2"></i>Enseignants</h6>
+                        <p>Des milliers d'enseignants qualifiés au service de l'éducation supérieure.</p>
+                    </div>
+                    <div class="info-item">
+                        <h6><i class="fas fa-book me-2"></i>Filières</h6>
+                        <p>Des centaines de filières couvrant tous les domaines du savoir.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+.mission-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.mission-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    background: var(--gradient-primary);
+    color: white;
+}
+
+.mission-item:hover .mission-icon {
+    background: rgba(255,255,255,0.2);
+}
+
+.mission-item:hover .mission-content h6 {
+    color: white !important;
+}
+
+.mission-item:hover .mission-content p {
+    color: rgba(255,255,255,0.9) !important;
+}
+
+.mission-icon {
+    width: 40px;
+    height: 40px;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.75rem;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.mission-icon i {
+    color: white;
+    font-size: 1rem;
+}
+
+.mission-content h6 {
+    color: var(--primary-color);
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.mission-content p {
+    color: #666;
+    font-size: 0.8rem;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.info-item {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background: #f8f9fa;
+    border-radius: 6px;
+    border-left: 3px solid #667eea;
+}
+
+.info-item h6 {
+    color: #667eea;
+    margin-bottom: 0.25rem;
+    font-size: 0.8rem;
+}
+
+.info-item p {
+    color: #666;
+    font-size: 0.75rem;
+    margin: 0;
+    line-height: 1.3;
+}
+</style>
+{% endblock %}

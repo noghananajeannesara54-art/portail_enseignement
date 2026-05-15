@@ -1,0 +1,209 @@
+<!-- ⚠️ MARQUE EN ROUGE - FICHIER DE BACKUP ⚠️ -->
+<!-- 📁 CE FICHIER EST UNE COPIE DE SAUVEGARDE -->
+<!-- ✅ UTILISER province_detail.html POUR LA VERSION ACTIVE -->
+
+{% extends 'base.html' %}
+
+{% block title %}{{ province.nom_province }} - Portail Ministère Enseignement Supérieur{% endblock %}
+
+{% block breadcrumb %}
+<nav aria-label="breadcrumb" class="mt-4">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{% url 'core:home' %}">Accueil</a></li>
+        <li class="breadcrumb-item active">{{ province.nom_province }}</li>
+    </ol>
+</nav>
+{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h1 class="h2">
+        <i class="fas fa-map-marker-alt text-primary me-2"></i>
+        {{ province.nom_province }}
+    </h1>
+    <span class="badge bg-primary fs-6">{{ province.code_province }}</span>
+</div>
+
+<div class="row">
+    <div class="col-lg-8">
+        <div class="card mb-4">
+            <div class="card-header bg-primary text-white">
+                <h5 class="mb-0">
+                    <i class="fas fa-info-circle me-2"></i>Informations sur la province
+                </h5>
+            </div>
+            <div class="card-body">
+                {% if province.description %}
+                    <p>{{ province.description }}</p>
+                {% else %}
+                    <p class="text-muted">Aucune description disponible pour cette province.</p>
+                {% endif %}
+                
+                <div class="row mt-3">
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <h4 class="text-primary">{{ province.villes.count }}</h4>
+                            <p class="text-muted mb-0">Villes</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <h4 class="text-success">
+                                {% with total_etab=0 %}
+                                    {% for ville in province.villes.all %}
+                                        {% with total_etab=total_etab|add:ville.etablissements.count %}
+                                        {% endwith %}
+                                    {% endfor %}
+                                    {{ total_etab }}
+                                {% endwith %}
+                            </h4>
+                            <p class="text-muted mb-0">Établissements</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <h4 class="text-info">
+                                {% with total_filieres=province.villes.all|length:0 %}
+                                    {% for ville in province.villes.all %}
+                                        {% for etab in ville.etablissements.all %}
+                                            {% with total_filieres=total_filieres|add:etab.filieres.count %}
+                                            {% endwith %}
+                                        {% endfor %}
+                                    {% endfor %}
+                                    {{ total_filieres }}
+                                {% endwith %}
+                            </h4>
+                            <p class="text-muted mb-0">Filières</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="fas fa-city me-2"></i>Villes de la province
+                </h5>
+            </div>
+            <div class="card-body">
+                {% if villes %}
+                    <div class="row g-4">
+                        {% for ville in villes %}
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h6 class="card-title">
+                                            <i class="fas fa-map-pin text-primary me-2"></i>
+                                            {{ ville.nom_ville }}
+                                        </h6>
+                                        {% if ville.description %}
+                                            <p class="card-text small text-muted">{{ ville.description|truncatewords:20 }}</p>
+                                        {% endif %}
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <small class="text-muted">
+                                                <i class="fas fa-university me-1"></i>
+                                                {{ ville.etablissements.count }} établissement(s)
+                                            </small>
+                                            <a href="{% url 'core:ville_detail' ville.pk %}" 
+                                               class="btn btn-sm btn-outline-primary">
+                                                Voir les détails
+                                                <i class="fas fa-arrow-right ms-1"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    <div class="text-center py-4">
+                        <i class="fas fa-city text-muted" style="font-size: 3rem;"></i>
+                        <p class="text-muted mt-3">Aucune ville enregistrée dans cette province.</p>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4">
+        <div class="card mb-4">
+            <div class="card-header">
+                <h6 class="mb-0">
+                    <i class="fas fa-chart-bar me-2"></i>Statistiques
+                </h6>
+            </div>
+            <div class="card-body">
+                <canvas id="statsChart" width="400" height="200"></canvas>
+            </div>
+        </div>
+
+        {% if user.is_authenticated and user.is_staff %}
+            <div class="card">
+                <div class="card-header">
+                    <h6 class="mb-0">
+                        <i class="fas fa-cog me-2"></i>Actions rapides
+                    </h6>
+                </div>
+                <div class="card-body">
+                    <a href="{% url 'admin:core_ville_add' %}" class="btn btn-sm btn-outline-primary w-100 mb-2">
+                        <i class="fas fa-plus me-1"></i>Ajouter une ville
+                    </a>
+                    <a href="{% url 'admin:core_province_change' province.pk %}" 
+                       class="btn btn-sm btn-outline-secondary w-100">
+                        <i class="fas fa-edit me-1"></i>Modifier la province
+                    </a>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+// Statistics data from Django
+const statsData = {
+    villes: {{ province.villes.count|default:0 }},
+    etablissements: {{ province.villes.count|default:0 }},
+    filieres: 0
+};
+
+// Simple statistics chart
+const ctx = document.getElementById('statsChart').getContext('2d');
+const statsChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Villes', 'Établissements', 'Filières'],
+        datasets: [{
+            label: 'Statistiques',
+            data: [statsData.villes, statsData.etablissements, statsData.filieres],
+            backgroundColor: [
+                'rgba(102, 126, 234, 0.8)',
+                'rgba(118, 75, 162, 0.8)',
+                'rgba(40, 167, 69, 0.8)'
+            ],
+            borderColor: [
+                'rgba(102, 126, 234, 1)',
+                'rgba(118, 75, 162, 1)',
+                'rgba(40, 167, 69, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+            y: {
+                beginAtZero: true,
+                ticks: {
+                    stepSize: 1
+                }
+            }
+        }
+    }
+});
+</script>
+{% endblock %}

@@ -1,0 +1,182 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ province.nom_province }} - Portail Ministère Enseignement Supérieur{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <!-- Sidebar -->
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">
+                        <i class="fas fa-map me-2"></i>
+                        Provinces
+                    </h5>
+                </div>
+                <div class="list-group list-group-flush">
+                    {% for province_item in provinces %}
+                        <a href="{% url 'core:province_detail' province_item.pk %}" 
+                           class="list-group-item list-group-item-action {% if province_item.pk == province.pk %}active{% endif %}">
+                            {{ province_item.nom_province }}
+                        </a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-9">
+            <!-- Province Header -->
+            <div class="card mb-4">
+                <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                    <h4 class="mb-0">
+                        <i class="fas fa-map-marked-alt me-2"></i>
+                        {{ province.nom_province }}
+                    </h4>
+                    {% if user.is_authenticated and user.is_staff %}
+                        <a href="{% url 'core:edit_province' province.pk %}" class="btn btn-sm btn-warning">
+                            <i class="fas fa-edit"></i> Modifier
+                        </a>
+                    {% endif %}
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h5 class="text-primary">Code: {{ province.code_province }}</h5>
+                            {% if province.description %}
+                                <p>{{ province.description }}</p>
+                            {% else %}
+                                <p class="text-muted">Aucune description disponible.</p>
+                            {% endif %}
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <h6 class="text-muted">Statistiques</h6>
+                                <div class="row mt-3">
+                                    <div class="col-md-4">
+                                        <div class="text-center">
+                                            <h4 class="text-primary">{{ province.villes.count }}</h4>
+                                            <p class="text-muted mb-0">Villes</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="text-center">
+                                            <h4 class="text-success">
+                                                {% with total_etab=0 %}
+                                                    {% for ville in province.villes.all %}
+                                                        {% with total_etab=total_etab|add:ville.etablissements.count %}
+                                                        {% endwith %}
+                                                    {% endfor %}
+                                                    {{ total_etab }}
+                                                {% endwith %}
+                                            </h4>
+                                            <p class="text-muted mb-0">Établissements</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="text-center">
+                                            <h4 class="text-info">0</h4>
+                                            <p class="text-muted mb-0">Filières</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Cities List -->
+            <div class="card">
+                <div class="card-header bg-secondary text-white">
+                    <h5 class="mb-0">
+                        <i class="fas fa-city me-2"></i>
+                        Villes de la province
+                    </h5>
+                </div>
+                <div class="card-body">
+                    {% if province.villes.exists %}
+                        <div class="row">
+                            {% for ville in province.villes.all %}
+                                <div class="col-md-6 mb-3">
+                                    <div class="card h-100">
+                                        <div class="card-body">
+                                            <h6 class="card-title">
+                                                <i class="fas fa-map-pin text-primary me-2"></i>
+                                                {{ ville.nom_ville }}
+                                            </h6>
+                                            {% if ville.description %}
+                                                <p class="card-text">{{ ville.description|truncatewords:20 }}</p>
+                                            {% endif %}
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <small class="text-muted">{{ ville.etablissements.count }} établissements</small>
+                                                <a href="{% url 'core:ville_detail' ville.pk %}" class="btn btn-sm btn-outline-primary">
+                                                    Voir détails
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        <div class="text-center py-4">
+                            <i class="fas fa-city text-muted" style="font-size: 3rem;"></i>
+                            <p class="text-muted mt-3">Aucune ville enregistrée pour cette province.</p>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+            
+            <!-- Quick Actions for Staff -->
+            {% if user.is_authenticated and user.is_staff %}
+                <div class="card mt-4">
+                    <div class="card-header bg-warning text-dark">
+                        <h5 class="mb-0">
+                            <i class="fas fa-tools me-2"></i>
+                            Actions rapides
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3 mb-2">
+                                <a href="{% url 'admin:core_ville_add' %}" class="btn btn-outline-primary btn-sm w-100">
+                                    <i class="fas fa-plus me-1"></i>
+                                    Ajouter une ville
+                                </a>
+                            </div>
+                            <div class="col-md-3 mb-2">
+                                <a href="{% url 'admin:core_etablissement_add' %}" class="btn btn-outline-success btn-sm w-100">
+                                    <i class="fas fa-plus me-1"></i>
+                                    Ajouter un établissement
+                                </a>
+                            </div>
+                            <div class="col-md-3 mb-2">
+                                <a href="{% url 'admin:core_province_changelist' %}" class="btn btn-outline-info btn-sm w-100">
+                                    <i class="fas fa-cog me-1"></i>
+                                    Gérer les provinces
+                                </a>
+                            </div>
+                            <div class="col-md-3 mb-2">
+                                <a href="{% url 'admin:index' %}" class="btn btn-outline-secondary btn-sm w-100">
+                                    <i class="fas fa-tachometer-alt me-1"></i>
+                                    Administration
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+// Simple statistics display
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('Province details loaded');
+});
+</script>
+{% endblock %}

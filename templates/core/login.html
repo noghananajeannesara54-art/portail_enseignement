@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+
+{% block title %}Connexion - Portail Ministère Enseignement Supérieur{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+            <div class="card shadow-lg">
+                <div class="card-header bg-gradient-primary text-white text-center py-3">
+                    <h4 class="mb-0">
+                        <i class="fas fa-sign-in-alt me-2"></i>
+                        Connexion
+                    </h4>
+                    <p class="mb-0">Accédez à votre espace personnel</p>
+                </div>
+                <div class="card-body p-4">
+                    {% if messages %}
+                        {% for message in messages %}
+                            <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+                                {{ message }}
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+
+                    <form method="post">
+                        {% csrf_token %}
+                        
+                        <div class="mb-3">
+                            <label for="username" class="form-label">
+                                <i class="fas fa-user me-2"></i>Nom d'utilisateur ou Email
+                            </label>
+                            <input type="text" name="username" id="username" class="form-control" 
+                                   placeholder="Entrez votre nom d'utilisateur ou email" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="password" class="form-label">
+                                <i class="fas fa-lock me-2"></i>Mot de passe
+                            </label>
+                            <input type="password" name="password" id="password" class="form-control" 
+                                   placeholder="Entrez votre mot de passe" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input type="checkbox" name="remember_me" id="remember_me" class="form-check-input">
+                                <label class="form-check-label" for="remember_me">
+                                    Se souvenir de moi
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-gradient-primary">
+                                <i class="fas fa-sign-in-alt me-2"></i>
+                                Se connecter
+                            </button>
+                        </div>
+                        
+                        <div class="text-center mt-3">
+                            <small class="text-muted">
+                                Vous n'avez pas de compte ? 
+                                <a href="{% url 'core:register' %}" class="text-primary">
+                                    Inscrivez-vous ici
+                                </a>
+                            </small>
+                        </div>
+                        
+                        <div class="text-center">
+                            <small class="text-muted">
+                                <a href="#" class="text-primary">
+                                    Mot de passe oublié ?
+                                </a>
+                            </small>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Informations supplémentaires -->
+            <div class="card mt-3 border-0 bg-light">
+                <div class="card-body text-center">
+                    <h6 class="text-primary mb-3">
+                        <i class="fas fa-info-circle me-2"></i>
+                        Pourquoi s'inscrire ?
+                    </h6>
+                    <ul class="list-unstyled text-start small">
+                        <li class="mb-2">
+                            <i class="fas fa-check text-success me-2"></i>
+                            Accès aux supports de cours
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check text-success me-2"></i>
+                            Suivi de votre progression
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check text-success me-2"></i>
+                            Notifications personnalisées
+                        </li>
+                        <li class="mb-0">
+                            <i class="fas fa-check text-success me-2"></i>
+                            Accès aux ressources exclusives
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

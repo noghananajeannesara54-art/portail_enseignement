@@ -1,0 +1,253 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ niveau.get_libelle_niveau_display }} - {{ niveau.filiere.nom_filiere }}{% endblock %}
+
+{% block breadcrumb %}
+<nav aria-label="breadcrumb" class="mt-4">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{% url 'core:home' %}">Accueil</a></li>
+        <li class="breadcrumb-item">
+            <a href="{% url 'core:province_detail' niveau.filiere.etablissement.ville.province.pk %}">
+                {{ niveau.filiere.etablissement.ville.province.nom_province }}
+            </a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="{% url 'core:ville_detail' niveau.filiere.etablissement.ville.pk %}">
+                {{ niveau.filiere.etablissement.ville.nom_ville }}
+            </a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="{% url 'core:etablissement_detail' niveau.filiere.etablissement.pk %}">
+                {{ niveau.filiere.etablissement.nom_etab }}
+            </a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="{% url 'core:filiere_detail' niveau.filiere.pk %}">
+                {{ niveau.filiere.nom_filiere }}
+            </a>
+        </li>
+        <li class="breadcrumb-item active">{{ niveau.get_libelle_niveau_display }}</li>
+    </ol>
+</nav>
+{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h1 class="h2">
+        <i class="fas fa-layer-group text-primary me-2"></i>
+        {{ niveau.get_libelle_niveau_display }}
+    </h1>
+    <span class="badge bg-secondary fs-6">{{ niveau.filiere.nom_filiere }}</span>
+</div>
+
+<div class="row">
+    <div class="col-lg-8">
+        <div class="card mb-4">
+            <div class="card-header bg-primary text-white">
+                <h5 class="mb-0">
+                    <i class="fas fa-info-circle me-2"></i>Informations sur le niveau
+                </h5>
+            </div>
+            <div class="card-body">
+                {% if niveau.description %}
+                    <p>{{ niveau.description }}</p>
+                {% else %}
+                    <p class="text-muted">Aucune description disponible pour ce niveau.</p>
+                {% endif %}
+                
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <p><strong>Niveau:</strong> {{ niveau.get_libelle_niveau_display }}</p>
+                        <p><strong>Filière:</strong> {{ niveau.filiere.nom_filiere }}</p>
+                        <p><strong>Code filière:</strong> {{ niveau.filiere.code_filiere }}</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p><strong>Établissement:</strong> {{ niveau.filiere.etablissement.nom_etab }}</p>
+                        <p><strong>Ville:</strong> {{ niveau.filiere.etablissement.ville.nom_ville }}</p>
+                        <p><strong>Province:</strong> {{ niveau.filiere.etablissement.ville.province.nom_province }}</p>
+                    </div>
+                </div>
+                
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <h4 class="text-primary">{{ matieres.count }}</h4>
+                            <p class="text-muted mb-0">Matières</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <h4 class="text-success">
+                                {% with total_supports=0 %}
+                                    {% for matiere in matieres %}
+                                        {% with total_supports=total_supports|add:matiere.supports.count %}
+                                        {% endwith %}
+                                    {% endfor %}
+                                    {{ total_supports }}
+                                {% endwith %}
+                            </h4>
+                            <p class="text-muted mb-0">Supports de cours</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <h4 class="text-info">
+                                {% with total_hours=0 %}
+                                    {% for matiere in matieres %}
+                                        {% with total_hours=total_hours|add:matiere.volume_horaire %}
+                                        {% endwith %}
+                                    {% endfor %}
+                                    {{ total_hours }}
+                                {% endwith %}
+                            </h4>
+                            <p class="text-muted mb-0">Heures totales</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="fas fa-book me-2"></i>Matières du niveau
+                </h5>
+            </div>
+            <div class="card-body">
+                {% if matieres %}
+                    <div class="row g-4">
+                        {% for matiere in matieres %}
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">
+                                                <i class="fas fa-book-open text-primary me-2"></i>
+                                                {{ matiere.nom_matiere }}
+                                            </h6>
+                                            <span class="badge bg-light text-dark">{{ matiere.code_matiere }}</span>
+                                        </div>
+                                        
+                                        {% if matiere.description %}
+                                            <p class="card-text small text-muted">{{ matiere.description|truncatewords:12 }}</p>
+                                        {% endif %}
+                                        
+                                        <p class="card-text small">
+                                            <i class="fas fa-clock me-1"></i>
+                                            {{ matiere.volume_horaire }} heures
+                                        </p>
+                                        
+                                        <div class="d-flex justify-content-between align-items-center mt-3">
+                                            <small class="text-muted">
+                                                <i class="fas fa-file-alt me-1"></i>
+                                                {{ matiere.supports.count }} support(s)
+                                            </small>
+                                            <a href="{% url 'core:matiere_detail' matiere.pk %}" 
+                                               class="btn btn-sm btn-outline-primary">
+                                                Voir les détails
+                                                <i class="fas fa-arrow-right ms-1"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    <div class="text-center py-4">
+                        <i class="fas fa-book text-muted" style="font-size: 3rem;"></i>
+                        <p class="text-muted mt-3">Aucune matière enregistrée pour ce niveau.</p>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4">
+        <div class="card mb-4">
+            <div class="card-header">
+                <h6 class="mb-0">
+                    <i class="fas fa-chart-bar me-2"></i>Répartition des heures
+                </h6>
+            </div>
+            <div class="card-body">
+                <canvas id="hoursChart" width="400" height="200"></canvas>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header">
+                <h6 class="mb-0">
+                    <i class="fas fa-info me-2"></i>Informations
+                </h6>
+            </div>
+            <div class="card-body">
+                <h6>Filière</h6>
+                <p class="text-muted">{{ niveau.filiere.nom_filiere }}</p>
+                
+                <h6>Établissement</h6>
+                <p class="text-muted">{{ niveau.filiere.etablissement.nom_etab }}</p>
+                
+                <h6>Localisation</h6>
+                <p class="text-muted">
+                    {{ niveau.filiere.etablissement.ville.nom_ville }}, 
+                    {{ niveau.filiere.etablissement.ville.province.nom_province }}
+                </p>
+            </div>
+        </div>
+
+        {% if user.is_authenticated and user.is_staff %}
+            <div class="card">
+                <div class="card-header">
+                    <h6 class="mb-0">
+                        <i class="fas fa-cog me-2"></i>Actions rapides
+                    </h6>
+                </div>
+                <div class="card-body">
+                    <a href="{% url 'admin:core_matiere_add' %}" class="btn btn-sm btn-outline-primary w-100 mb-2">
+                        <i class="fas fa-plus me-1"></i>Ajouter une matière
+                    </a>
+                    <a href="{% url 'admin:core_niveau_change' niveau.pk %}" 
+                       class="btn btn-sm btn-outline-secondary w-100">
+                        <i class="fas fa-edit me-1"></i>Modifier le niveau
+                    </a>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+// Hours distribution chart
+const ctx = document.getElementById('hoursChart').getContext('2d');
+const hoursChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: [{% for matiere in matieres %}'{{ matiere.nom_matiere|truncatechars:15 }}'{% if not forloop.last %}, {% endif %}{% endfor %}],
+        datasets: [{
+            label: 'Volume horaire',
+            data: [{% for matiere in matieres %}{{ matiere.volume_horaire }}{% if not forloop.last %}, {% endif %}{% endfor %}],
+            backgroundColor: 'rgba(102, 126, 234, 0.8)',
+            borderColor: 'rgba(102, 126, 234, 1)',
+            borderWidth: 1
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+            y: {
+                beginAtZero: true,
+                title: {
+                    display: true,
+                    text: 'Heures'
+                }
+            }
+        }
+    }
+});
+</script>
+{% endblock %}

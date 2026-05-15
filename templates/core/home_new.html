@@ -1,0 +1,765 @@
+{% extends 'base.html' %}
+
+{% block title %}Accueil - Portail Ministère Enseignement Supérieur{% endblock %}
+
+{% block content %}
+<!-- Hero Section Améliorée -->
+<section class="hero-section position-relative overflow-hidden">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="hero-content">
+                    <div class="mb-4">
+                        <h1 class="display-4 fw-bold text-white mb-3">
+                            Ministère de l'Enseignement Supérieur
+                        </h1>
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="emblem-gabon me-3">
+                                <i class="fas fa-flag fa-2x"></i>
+                            </div>
+                            <div>
+                                <h2 class="h3 text-white mb-1">République Gabonaise</h2>
+                                <p class="text-white-50 mb-0">Unité - Travail - Justice</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="lead text-white mb-4">
+                        Portail officiel de l'enseignement supérieur du Gabon. 
+                        Explorez les établissements, filières et ressources éducatives à travers les 9 provinces.
+                    </p>
+                    
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="#provinces" class="btn btn-light btn-lg px-4">
+                            <i class="fas fa-compass me-2"></i>Explorer les Provinces
+                        </a>
+                        {% if not user.is_authenticated %}
+                            <a href="{% url 'core:login' %}" class="btn btn-outline-light btn-lg px-4">
+                                <i class="fas fa-sign-in-alt me-2"></i>Se Connecter
+                            </a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="minister-section">
+                    <div class="card border-0 shadow-lg">
+                        <div class="card-body p-4">
+                            <div class="text-center mb-4">
+                                <div class="minister-photo-container mb-3">
+                                    <img src="https://via.placeholder.com/300x300/667eea/ffffff?text=Ministre" 
+                                         alt="Ministre de l'Enseignement Supérieur" 
+                                         class="img-fluid rounded-circle shadow minister-photo">
+                                    <div class="minister-badge">
+                                        <i class="fas fa-user-tie"></i>
+                                    </div>
+                                </div>
+                                <h4 class="fw-bold text-primary">Son Excellence</h4>
+                                <h5 class="text-secondary">Le Ministre de l'Enseignement Supérieur</h5>
+                                <p class="text-muted small">Gouvernement de la République Gabonaise</p>
+                            </div>
+                            
+                            <div class="minister-info">
+                                <h6 class="text-primary mb-3">
+                                    <i class="fas fa-quote-left me-2"></i>Message du Ministre
+                                </h6>
+                                <div class="message-box bg-light p-3 rounded-3 mb-3">
+                                    <p class="mb-0 fst-italic">
+                                        "L'éducation est la pierre angulaire du développement de notre nation. 
+                                        Nous nous engageons à offrir un enseignement supérieur de qualité, 
+                                        accessible à tous les Gabonais, pour former les leaders de demain."
+                                    </p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">
+                                        <i class="fas fa-calendar me-1"></i>
+                                        Mis à jour le {{ "now"|date:"d/m/Y" }}
+                                    </small>
+                                    <button class="btn btn-sm btn-outline-primary">
+                                        <i class="fas fa-envelope me-1"></i>Contacter
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Éléments décoratifs -->
+    <div class="hero-decoration hero-decoration-1"></div>
+    <div class="hero-decoration hero-decoration-2"></div>
+    <div class="hero-decoration hero-decoration-3"></div>
+</section>
+
+<!-- Statistics Section -->
+<section class="py-5 bg-white">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="h2 fw-bold">Notre Système Éducatif en Chiffres</h2>
+            <p class="text-muted lead">Un réseau national au service de l'excellence éducative</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="stats-card">
+                    <div class="stats-icon mb-3">
+                        <i class="fas fa-map"></i>
+                    </div>
+                    <h3 class="fw-bold mb-2">{{ stats.total_provinces }}</h3>
+                    <p class="text-muted mb-0">Provinces</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stats-card">
+                    <div class="stats-icon mb-3">
+                        <i class="fas fa-city"></i>
+                    </div>
+                    <h3 class="fw-bold mb-2">{{ stats.total_villes }}</h3>
+                    <p class="text-muted mb-0">Villes Universitaires</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stats-card">
+                    <div class="stats-icon mb-3">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="fw-bold mb-2">{{ stats.total_etablissements }}</h3>
+                    <p class="text-muted mb-0">Établissements</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stats-card">
+                    <div class="stats-icon mb-3">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3 class="fw-bold mb-2">{{ stats.total_filieres }}</h3>
+                    <p class="text-muted mb-0">Filières d'Excellence</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Ministre Section Détaillée -->
+<section id="ministere" class="py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <div class="text-center">
+                    <div class="minister-photo-large mb-4">
+                        <img src="https://via.placeholder.com/400x400/667eea/ffffff?text=Ministre" 
+                             alt="Ministre de l'Enseignement Supérieur" 
+                             class="img-fluid rounded-3 shadow-lg">
+                    </div>
+                    <div class="minister-credentials">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="fw-bold text-primary mb-3">Son Excellence</h5>
+                                <h6 class="text-secondary mb-2">Ministre de l'Enseignement Supérieur</h6>
+                                <div class="ministre-details">
+                                    <p class="small mb-2">
+                                        <i class="fas fa-graduation-cap me-2 text-primary"></i>
+                                        Docteur en Sciences de l'Éducation
+                                    </p>
+                                    <p class="small mb-2">
+                                        <i class="fas fa-briefcase me-2 text-success"></i>
+                                        Plus de 20 ans d'expérience
+                                    </p>
+                                    <p class="small mb-0">
+                                        <i class="fas fa-award me-2 text-warning"></i>
+                                        Multiple distinctions académiques
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-8">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <h3 class="card-title text-primary mb-4">
+                            <i class="fas fa-university me-2"></i>
+                            Notre Vision pour l'Éducation Supérieure
+                        </h3>
+                        
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <h6 class="text-secondary mb-3">
+                                    <i class="fas fa-bullseye me-2"></i>
+                                    Nos Priorités
+                                </h6>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2">
+                                        <i class="fas fa-check-circle text-success me-2"></i>
+                                        Excellence académique
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-check-circle text-success me-2"></i>
+                                        Accessibilité universelle
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-check-circle text-success me-2"></i>
+                                        Innovation pédagogique
+                                    </li>
+                                    <li class="mb-0">
+                                        <i class="fas fa-check-circle text-success me-2"></i>
+                                        Recherche scientifique
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="text-secondary mb-3">
+                                    <i class="fas fa-chart-line me-2"></i>
+                                    Nos Réalisations
+                                </h6>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2">
+                                        <i class="fas fa-trophy text-warning me-2"></i>
+                                        Modernisation des infrastructures
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-trophy text-warning me-2"></i>
+                                        Digitalisation de l'enseignement
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-trophy text-warning me-2"></i>
+                                        Partenariats internationaux
+                                    </li>
+                                    <li class="mb-0">
+                                        <i class="fas fa-trophy text-warning me-2"></i>
+                                        Formation continue des enseignants
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="minister-message bg-primary bg-opacity-10 p-4 rounded-3">
+                            <h6 class="text-primary mb-3">
+                                <i class="fas fa-quote-left me-2"></i>
+                                Message aux Étudiants
+                            </h6>
+                            <p class="mb-0 fst-italic">
+                                "Chers étudiants, vous êtes l'avenir de notre nation. 
+                                Le Ministère s'engage à vous fournir un environnement d'apprentissage 
+                                moderne, stimulant et adapté aux défis du 21ème siècle. 
+                                Ensemble, construisons un Gabon fort et prospère grâce à l'éducation."
+                            </p>
+                            <div class="text-end mt-3">
+                                <small class="text-muted">
+                                    <strong>Le Ministre</strong>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Missions Section -->
+<section id="missions" class="py-5 bg-white">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="h2 fw-bold">Nos Missions Fondamentales</h2>
+            <p class="text-muted lead">Au service de l'excellence éducative et du développement national</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="mission-card h-100">
+                    <div class="mission-icon mb-4">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h5 class="card-title mb-3">Formation d'Excellence</h5>
+                    <p class="card-text text-muted">
+                        Assurer une formation supérieure de qualité, adaptée aux besoins du marché du travail 
+                        et aux exigences du développement national, en formant des compétences 
+                        professionnelles et académiques reconnues.
+                    </p>
+                    <ul class="mission-features list-unstyled">
+                        <li><i class="fas fa-check text-primary me-2"></i>Cursus modernes</li>
+                        <li><i class="fas fa-check text-primary me-2"></i>Pédagogie innovante</li>
+                        <li><i class="fas fa-check text-primary me-2"></i>Évaluation continue</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="mission-card h-100">
+                    <div class="mission-icon mb-4">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h5 class="card-title mb-3">Recherche et Innovation</h5>
+                    <p class="card-text text-muted">
+                        Promouvoir la recherche scientifique et l'innovation technologique 
+                        pour répondre aux défis sociétaux, soutenir le développement économique 
+                        et contribuer à l'avancement du savoir universel.
+                    </p>
+                    <ul class="mission-features list-unstyled">
+                        <li><i class="fas fa-check text-success me-2"></i>Laboratoires modernes</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Publications scientifiques</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Brevets et innovations</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="mission-card h-100">
+                    <div class="mission-icon mb-4">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h5 class="card-title mb-3">Partenariats Stratégiques</h5>
+                    <p class="card-text text-muted">
+                        Développer des collaborations nationales et internationales pour enrichir 
+                        notre système éducatif, faciliter les échanges académiques et 
+                        promouvoir la mobilité étudiante et enseignante.
+                    </p>
+                    <ul class="mission-features list-unstyled">
+                        <li><i class="fas fa-check text-info me-2"></i>Accords internationaux</li>
+                        <li><i class="fas fa-check text-info me-2"></i>Programmes d'échange</li>
+                        <li><i class="fas fa-check text-info me-2"></i>Réseaux académiques</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Provinces Section -->
+<section id="provinces" class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="h2 fw-bold">Explorer par Province</h2>
+            <p class="text-muted lead">Découvrez les établissements d'enseignement supérieur à travers le Gabon</p>
+        </div>
+        <div class="row g-4">
+            {% for province in provinces %}
+                <div class="col-md-4">
+                    <div class="province-card p-4 text-center" onclick="window.location.href='{% url 'core:province_detail' province.pk %}'">
+                        <div class="province-icon mb-3">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4 class="fw-bold mb-2">{{ province.nom_province }}</h4>
+                        <p class="mb-2">{{ province.villes.count }} ville(s)</p>
+                        <span class="province-code">{{ province.code_province }}</span>
+                    </div>
+                </div>
+            {% empty %}
+                <div class="col-12 text-center">
+                    <p class="text-muted">Aucune province disponible pour le moment.</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- News Section -->
+<section id="actualites" class="py-5 bg-white">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="h2 fw-bold">Actualités et Événements</h2>
+            <p class="text-muted lead">Restez informé des dernières nouveautés du ministère</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="news-card h-100">
+                    <div class="news-image mb-3">
+                        <img src="https://via.placeholder.com/400x250/667eea/ffffff?text=Nouveau+Portail" 
+                             class="img-fluid rounded" alt="Actualité">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta mb-2">
+                            <span class="badge bg-primary">Nouveau</span>
+                            <small class="text-muted ms-2">
+                                <i class="fas fa-calendar me-1"></i>Il y a 2 jours
+                            </small>
+                        </div>
+                        <h5 class="card-title mb-2">Lancement du Nouveau Portail Éducatif</h5>
+                        <p class="card-text text-muted">
+                            Le ministère lance son nouveau portail numérique pour faciliter l'accès 
+                            aux ressources éducatives à travers tout le territoire gabonais.
+                        </p>
+                        <a href="#" class="btn btn-outline-primary btn-sm">
+                            Lire la suite <i class="fas fa-arrow-right ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="news-card h-100">
+                    <div class="news-image mb-3">
+                        <img src="https://via.placeholder.com/400x250/764ba2/ffffff?text=Formation" 
+                             class="img-fluid rounded" alt="Formation">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta mb-2">
+                            <span class="badge bg-success">Formation</span>
+                            <small class="text-muted ms-2">
+                                <i class="fas fa-calendar me-1"></i>Il y a 1 semaine
+                            </small>
+                        </div>
+                        <h5 class="card-title mb-2">Nouveaux Programmes de Formation</h5>
+                        <p class="card-text text-muted">
+                            Introduction de programmes modernes alignés sur les besoins du marché 
+                            de l'emploi gabonais et les défis technologiques actuels.
+                        </p>
+                        <a href="#" class="btn btn-outline-primary btn-sm">
+                            Lire la suite <i class="fas fa-arrow-right ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="news-card h-100">
+                    <div class="news-image mb-3">
+                        <img src="https://via.placeholder.com/400x250/40a9ff/ffffff?text=Partenariat" 
+                             class="img-fluid rounded" alt="Partenariat">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta mb-2">
+                            <span class="badge bg-info">Partenariat</span>
+                            <small class="text-muted ms-2">
+                                <i class="fas fa-calendar me-1"></i>Il y a 2 semaines
+                            </small>
+                        </div>
+                        <h5 class="card-title mb-2">Accords de Coopération Internationale</h5>
+                        <p class="card-text text-muted">
+                            Signature de nouveaux accords avec des universités étrangères prestigieuses 
+                            pour renforcer la coopération académique et la recherche.
+                        </p>
+                        <a href="#" class="btn btn-outline-primary btn-sm">
+                            Lire la suite <i class="fas fa-arrow-right ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-primary text-white">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="h2 fw-bold">Contactez-Nous</h2>
+            <p class="lead">Nous sommes à votre disposition pour toute information ou assistance</p>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="contact-item text-center">
+                    <div class="contact-icon mb-3">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h5 class="mb-2">Adresse</h5>
+                    <p class="mb-0">
+                        Ministère de l'Enseignement Supérieur<br>
+                        Libreville, Gabon<br>
+                        BP: 1234
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="contact-item text-center">
+                    <div class="contact-icon mb-3">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h5 class="mb-2">Téléphone</h5>
+                    <p class="mb-0">
+                        +241 123 456<br>
+                        +241 789 012
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="contact-item text-center">
+                    <div class="contact-icon mb-3">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h5 class="mb-2">Email</h5>
+                    <p class="mb-0">
+                        contact@gabon.edu<br>
+                        info@gabon.edu
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+/* Hero Section Styles */
+.hero-section {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7e22ce 100%);
+    color: white;
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.emblem-gabon {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.minister-section {
+    position: relative;
+    z-index: 2;
+}
+
+.minister-photo-container {
+    position: relative;
+    display: inline-block;
+}
+
+.minister-photo {
+    width: 200px;
+    height: 200px;
+    border: 4px solid #fff;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.minister-badge {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: #667eea;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #fff;
+}
+
+.hero-decoration {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+}
+
+.hero-decoration-1 {
+    width: 300px;
+    height: 300px;
+    top: -150px;
+    right: -150px;
+}
+
+.hero-decoration-2 {
+    width: 200px;
+    height: 200px;
+    bottom: -100px;
+    left: -100px;
+}
+
+.hero-decoration-3 {
+    width: 150px;
+    height: 150px;
+    top: 50%;
+    right: 10%;
+}
+
+/* Mission Cards */
+.mission-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+}
+
+.mission-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.mission-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    margin: 0 auto;
+}
+
+.mission-features {
+    margin-top: 20px;
+}
+
+.mission-features li {
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+/* Province Cards Enhanced */
+.province-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.province-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.province-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    opacity: 0.9;
+}
+
+.province-code {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Stats Cards Enhanced */
+.stats-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+}
+
+.stats-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.stats-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.8rem;
+    margin: 0 auto;
+}
+
+/* News Cards */
+.news-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.news-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.news-content {
+    padding: 20px;
+}
+
+.news-meta {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Contact Section */
+.contact-item {
+    padding: 30px;
+}
+
+.contact-icon {
+    width: 70px;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.8rem;
+    margin: 0 auto 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 60px 0;
+    }
+    
+    .minister-photo {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .mission-card, .stats-card, .news-card {
+        margin-bottom: 30px;
+    }
+}
+</style>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
+
+// Add animation on scroll
+window.addEventListener('scroll', () => {
+    const scrolled = window.pageYOffset;
+    const parallax = document.querySelector('.hero-decoration-1');
+    if (parallax) {
+        parallax.style.transform = `translateY(${scrolled * 0.5}px)`;
+    }
+});
+</script>
+{% endblock %}

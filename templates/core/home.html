@@ -1,0 +1,297 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Accueil - Ministère de l'Enseignement Supérieur{% endblock %}
+
+{% block content %}
+<!-- Hero Section avec la ministre -->
+<section class="hero-section text-white py-3 mb-3" style="background: linear-gradient(135deg, #009739 0%, #006633 50%, #004d26 100%);">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="hero-content">
+                    <h1 class="h2 fw-bold mb-2">
+                        Ministère de l'Enseignement Supérieur
+                    </h1>
+                    <p class="mb-2">
+                        Au service de l'excellence académique et de l'innovation scientifique au Gabon
+                    </p>
+                    <div class="d-flex gap-2 flex-wrap">
+                        <a href="{% url 'core:provinces_list' %}" class="btn" style="background-color: #FFD700; color: #006633; border: none;">
+                            <i class="fas fa-map-marked-alt me-2"></i>Explorer les établissements
+                        </a>
+                        <a href="{% url 'core:missions' %}" class="btn btn-outline-light">
+                            <i class="fas fa-info-circle me-2"></i>Nos missions
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="minister-card text-center">
+                    <div class="minister-photo mb-2">
+                        <img src="{% static 'images/Camelia-Ntoutoume-Leclercq.jpg.jpeg' %}" 
+                             alt="Mme Camelia Ntoutoume" 
+                             class="rounded-circle img-fluid border-3 border-warning shadow"
+                             style="width: 200px; height: 200px; object-fit: cover;">
+                    </div>
+                    <div class="minister-info">
+                        <h3 class="h5 mb-2">Mme Camelia Ntoutoume</h3>
+                        <p class="mb-0 small">Ministre de l'Enseignement Supérieur</p>
+                        <p class="small opacity-75">Gouvernement de la République Gabonaise</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Statistiques -->
+<section class="statistics-section py-3 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-4">
+                <h2 class="h3">Notre Système Éducatif en Chiffres</h2>
+                <p class="text-muted">Un réseau national au service de l'excellence</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="stat-card text-center">
+                    <div class="stat-icon text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px; background-color: #009739;">
+                        <i class="fas fa-map-marked-alt fa-2x"></i>
+                    </div>
+                    <h3 class="h2" style="color: #009739;">{{ provinces|length }}</h3>
+                    <p class="text-muted">Provinces couvertes</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="stat-card text-center">
+                    <div class="stat-icon text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px; background-color: #FFD700;">
+                        <i class="fas fa-university fa-2x"></i>
+                    </div>
+                    <h3 class="h2" style="color: #FFD700;">{{ total_etablissements }}</h3>
+                    <p class="text-muted">Établissements</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="stat-card text-center">
+                    <div class="stat-icon text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px; background-color: #0033A0;">
+                        <i class="fas fa-graduation-cap fa-2x"></i>
+                    </div>
+                    <h3 class="h2" style="color: #0033A0;">{{ total_filieres }}</h3>
+                    <p class="text-muted">Filières proposées</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="stat-card text-center">
+                    <div class="stat-icon text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px; background-color: #009739;">
+                        <i class="fas fa-book fa-2x"></i>
+                    </div>
+                    <h3 class="h2" style="color: #009739;">{{ total_matieres }}</h3>
+                    <p class="text-muted">Matières enseignées</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Missions du Ministère -->
+<section class="missions-section py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-4">
+                <h2 class="h3">Nos Missions</h2>
+                <p class="text-muted">Construire l'avenir de l'éducation supérieure gabonaise</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="mission-card h-100">
+                    <div class="card-body text-center">
+                        <div class="mission-icon rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px; background-color: rgba(0, 151, 57, 0.1); color: #009739;">
+                            <i class="fas fa-graduation-cap fa-1-5x"></i>
+                        </div>
+                        <h5 class="card-title">Formation Supérieure</h5>
+                        <p class="card-text text-muted">
+                            Assurer la formation et le développement des compétences des étudiants gabonais à tous les niveaux de l'enseignement supérieur.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="mission-card h-100">
+                    <div class="card-body text-center">
+                        <div class="mission-icon rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px; background-color: rgba(255, 215, 0, 0.1); color: #FFD700;">
+                            <i class="fas fa-microscope fa-1-5x"></i>
+                        </div>
+                        <h5 class="card-title">Recherche Scientifique</h5>
+                        <p class="card-text text-muted">
+                            Promouvoir et coordonner la recherche scientifique et technologique pour répondre aux besoins du développement national.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="mission-card h-100">
+                    <div class="card-body text-center">
+                        <div class="mission-icon rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px; background-color: rgba(0, 51, 160, 0.1); color: #0033A0;">
+                            <i class="fas fa-globe fa-1-5x"></i>
+                        </div>
+                        <h5 class="card-title">Coopération Internationale</h5>
+                        <p class="card-text text-muted">
+                            Développer les partenariats et les échanges académiques avec les institutions étrangères.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="mission-card h-100">
+                    <div class="card-body text-center">
+                        <div class="mission-icon rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px; background-color: rgba(0, 151, 57, 0.1); color: #009739;">
+                            <i class="fas fa-chart-line fa-1-5x"></i>
+                        </div>
+                        <h5 class="card-title">Évaluation et Qualité</h5>
+                        <p class="card-text text-muted">
+                            Garantir la qualité de l'enseignement supérieur et l'adéquation des formations aux besoins du marché du travail.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="mission-card h-100">
+                    <div class="card-body text-center">
+                        <div class="mission-icon rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px; background-color: rgba(255, 215, 0, 0.1); color: #FFD700;">
+                            <i class="fas fa-handshake fa-1-5x"></i>
+                        </div>
+                        <h5 class="card-title">Partenariats Public-Privé</h5>
+                        <p class="card-text text-muted">
+                            Favoriser la collaboration entre le secteur public et le secteur privé pour le développement de l'enseignement supérieur.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Provinces du Gabon -->
+<section class="provinces-section py-3 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-4">
+                <h2 class="h3">Présence sur Tout le Territoire</h2>
+                <p class="text-muted">Découvrez nos établissements dans chaque province</p>
+            </div>
+        </div>
+        <div class="row">
+            {% for province in provinces %}
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="province-card">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="province-icon rounded-circle d-inline-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px; background-color: rgba(0, 151, 57, 0.1); color: #009739;">
+                                <i class="fas fa-map-pin"></i>
+                            </div>
+                            <h5 class="card-title mb-0">{{ province.nom_province }}</h5>
+                        </div>
+                        <p class="card-text text-muted small mb-3">
+                            Explorez les établissements d'enseignement supérieur disponibles dans cette province.
+                        </p>
+                        <a href="{% url 'core:province_detail' province.pk %}" class="btn btn-sm" style="background-color: #009739; color: white; border: none;">
+                            <i class="fas fa-search me-1"></i>Découvrir
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<style>
+.hero-section {
+    background: linear-gradient(135deg, #006633 0%, #004d26 100%);
+}
+
+.minister-photo img {
+    transition: transform 0.3s ease;
+}
+
+.minister-photo img:hover {
+    transform: scale(1.05);
+}
+
+.stat-card {
+    transition: transform 0.3s ease;
+    padding: 2rem;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.mission-card, .province-card {
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.mission-card:hover, .province-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.mission-icon, .province-icon {
+    transition: transform 0.3s ease;
+    border-radius: 50%;
+}
+
+.mission-card:hover .mission-icon,
+.province-card:hover .province-icon {
+    transform: scale(1.1);
+}
+
+.stat-icon {
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.btn {
+    border-radius: 25px;
+    padding: 0.5rem 1.5rem;
+}
+
+.btn-light {
+    border-radius: 25px;
+    font-weight: 500;
+}
+
+.btn-outline-light {
+    border-radius: 25px;
+    font-weight: 500;
+}
+
+.btn-primary {
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.card {
+    border-radius: 20px;
+    border: none;
+    overflow: hidden;
+}
+
+.card-body {
+    border-radius: 20px;
+}
+</style>
+{% endblock %}
