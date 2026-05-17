@@ -9,15 +9,9 @@ PyMySQL==1.1.1
 packaging==26.2
 Pillow==10.3.0
 python-decouple==3.8
-<<<<<<< HEAD
 setuptools==80.9.0
 sqlparse==0.5.3
 tzdata==2025.2
 wheel==0.45.1
 whitenoise==6.12.0
-=======
-PyMySQL==1.0.2
-mysqlclient==2.1.1
-Pillow==11.1.0
-django-cors-headers==4.0.03
->>>>>>> da5e4b9b64d7d698bb636d9838522fbc151eba27
+mysqlclient==2.2.7
