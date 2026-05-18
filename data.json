@@ -1,1 +1,4234 @@
-[{"model": "auth.user", "fields": {"password": "pbkdf2_sha256$600000$IMpBNn5ldrmZZUMfvC91GS$eT8akE8hy/RTXtAsznUZm9bASgv5YnvL+Qmo1oDSWeQ=", "last_login": "2026-05-11T22:23:44.407Z", "is_superuser": true, "username": "admin", "first_name": "", "last_name": "", "email": "admin@enseignement-sup.ga", "is_staff": true, "is_active": true, "date_joined": "2026-05-11T15:36:30.503Z", "groups": [], "user_permissions": []}}, {"model": "auth.user", "fields": {"password": "pbkdf2_sha256$600000$PDYP2xEL6rLb3Ny4jIvIRT$5YH3pQXkODk248Vsfq22XNS3qgpjETUB7eSiS28ozy4=", "last_login": null, "is_superuser": false, "username": "enseignant", "first_name": "Jean", "last_name": "Mboumba", "email": "enseignant@gabon.edu", "is_staff": false, "is_active": true, "date_joined": "2026-05-11T22:38:46.804Z", "groups": [], "user_permissions": []}}, {"model": "auth.user", "fields": {"password": "pbkdf2_sha256$600000$9TY1VVJKofHC9lIFRwiX2O$MrU2SC/GG91FUMvVlVetmWqRjFVJHxcUWSj0BrPvkDU=", "last_login": null, "is_superuser": false, "username": "etudiant", "first_name": "Paul", "last_name": "Nze", "email": "etudiant@gabon.edu", "is_staff": false, "is_active": true, "date_joined": "2026-05-11T22:38:48.067Z", "groups": [], "user_permissions": []}}, {"model": "auth.user", "fields": {"password": "pbkdf2_sha256$600000$7jsGGxPok5tQYl76Wmr74A$r/X3DVODOikJ2H7L5FrqNQb+WaGW0yxEk6HAy9evXk8=", "last_login": null, "is_superuser": false, "username": "enseignant1", "first_name": "Jean", "last_name": "Mboumba", "email": "enseignant1@gabon.edu", "is_staff": false, "is_active": true, "date_joined": "2026-05-12T15:32:29.126Z", "groups": [], "user_permissions": []}}, {"model": "auth.user", "fields": {"password": "pbkdf2_sha256$600000$70H0a2lroNQStNHKCvEVpe$Gw2bKj33bB9ptczRKsV804zjH3PM8jmPPFAuvAsGYeE=", "last_login": null, "is_superuser": false, "username": "etudiant1", "first_name": "Paul", "last_name": "Nze", "email": "etudiant1@gabon.edu", "is_staff": false, "is_active": true, "date_joined": "2026-05-12T15:32:31.486Z", "groups": [], "user_permissions": []}}, {"model": "auth.user", "fields": {"password": "pbkdf2_sha256$600000$BTtZfmOEwEalCCRl94PKpB$jLdy9qfBF42EAT/3sPKQDNQ0FttX6yigWcWBsrokYQ4=", "last_login": null, "is_superuser": false, "username": "jean.mbarga_14", "first_name": "Jean", "last_name": "Mbarga", "email": "jean.mbarga_14@example.com", "is_staff": false, "is_active": true, "date_joined": "2026-05-12T16:20:15.472Z", "groups": [], "user_permissions": []}}, {"model": "auth.user", "fields": {"password": "pbkdf2_sha256$600000$XtcWebEViNgOXthlKgsPkf$uxpBM78QKODUoYw03R9kM4HKlcKxIZrvAVxkXFOVSl0=", "last_login": null, "is_superuser": false, "username": "marie.ondo_14", "first_name": "Marie", "last_name": "Ondo", "email": "marie.ondo_14@example.com", "is_staff": false, "is_active": true, "date_joined": "2026-05-12T16:20:17.262Z", "groups": [], "user_permissions": []}}, {"model": "auth.user", "fields": {"password": "pbkdf2_sha256$600000$RLWeBda0OQNmgYyxCdZG2I$0xCOh5rMyaw6glHO3lk7+UlRmReb4KIwbM3nfzG7t4A=", "last_login": null, "is_superuser": false, "username": "pierre.nguema_14", "first_name": "Pierre", "last_name": "Nguema", "email": "pierre.nguema_14@example.com", "is_staff": false, "is_active": true, "date_joined": "2026-05-12T16:20:18.647Z", "groups": [], "user_permissions": []}}, {"model": "auth.user", "fields": {"password": "pbkdf2_sha256$600000$WQtu68iJ0ume2BqTt3g13H$T9zd6yS3ZqNPkUbImsKgfmht3eI1Xgk46AT7ufu4X+k=", "last_login": null, "is_superuser": false, "username": "jean.mbarga_12", "first_name": "Jean", "last_name": "Mbarga", "email": "jean.mbarga_12@example.com", "is_staff": false, "is_active": true, "date_joined": "2026-05-12T16:20:20.017Z", "groups": [], "user_permissions": []}}, {"model": "auth.user", "fields": {"password": "pbkdf2_sha256$600000$fkgaP811uESt4degSgNx7B$hmyQSwp0ng00g0NCMlRxIyqX2RlYfxblW0AN/5X+WXI=", "last_login": null, "is_superuser": false, "username": "marie.ondo_12", "first_name": "Marie", "last_name": "Ondo", "email": "marie.ondo_12@example.com", "is_staff": false, "is_active": true, "date_joined": "2026-05-12T16:20:21.050Z", "groups": [], "user_permissions": []}}, {"model": "auth.user", "fields": {"password": "pbkdf2_sha256$600000$hmXKp35rFwwqexpV9Ug6yL$ACpviGeUa4ShnAjgTxSMp0+YZxToqT4/xZ972B22Q6c=", "last_login": null, "is_superuser": false, "username": "pierre.nguema_12", "first_name": "Pierre", "last_name": "Nguema", "email": "pierre.nguema_12@example.com", "is_staff": false, "is_active": true, "date_joined": "2026-05-12T16:20:22.071Z", "groups": [], "user_permissions": []}}, {"model": "auth.user", "fields": {"password": "pbkdf2_sha256$600000$7VELPA940wabMezQm6qGbG$mZSCR6aJIfZD64Euc/vu+8HcLim/U0oRTrqh1uu0ZII=", "last_login": null, "is_superuser": false, "username": "jean.mbarga_11", "first_name": "Jean", "last_name": "Mbarga", "email": "jean.mbarga_11@example.com", "is_staff": false, "is_active": true, "date_joined": "2026-05-12T16:20:23.771Z", "groups": [], "user_permissions": []}}, {"model": "auth.user", "fields": {"password": "pbkdf2_sha256$600000$KSjymttZIEd8Hi4rSRXVDE$FTpdnYBVQK32wxHu6Nkf3ulTZAreo3Awt1EhmSid/nw=", "last_login": null, "is_superuser": false, "username": "marie.ondo_11", "first_name": "Marie", "last_name": "Ondo", "email": "marie.ondo_11@example.com", "is_staff": false, "is_active": true, "date_joined": "2026-05-12T16:20:25.252Z", "groups": [], "user_permissions": []}}, {"model": "auth.user", "fields": {"password": "pbkdf2_sha256$600000$XO7bOl0aiTQFe1gNGL1hi2$NzVki0hmd4Snb+FiBNvwlk65QZOJo35T5AAwSUZu6QY=", "last_login": null, "is_superuser": false, "username": "pierre.nguema_11", "first_name": "Pierre", "last_name": "Nguema", "email": "pierre.nguema_11@example.com", "is_staff": false, "is_active": true, "date_joined": "2026-05-12T16:20:26.596Z", "groups": [], "user_permissions": []}}, {"model": "auth.user", "fields": {"password": "pbkdf2_sha256$600000$XFUlJzzs0t8bBDzccAm0Vd$0PpIFrjGRJjE8D4A+GkPgyhlbZwqys6QjM604W/Ik14=", "last_login": null, "is_superuser": false, "username": "jean.mbarga_13", "first_name": "Jean", "last_name": "Mbarga", "email": "jean.mbarga_13@example.com", "is_staff": false, "is_active": true, "date_joined": "2026-05-12T16:20:27.686Z", "groups": [], "user_permissions": []}}, {"model": "auth.user", "fields": {"password": "pbkdf2_sha256$600000$bx3lMnXU4aJEsW4uDEYh55$CpXLFk6LXL+PMiQIdWLlifF1AEAKtkWoGi+qU4U1y4Q=", "last_login": null, "is_superuser": false, "username": "marie.ondo_13", "first_name": "Marie", "last_name": "Ondo", "email": "marie.ondo_13@example.com", "is_staff": false, "is_active": true, "date_joined": "2026-05-12T16:20:28.883Z", "groups": [], "user_permissions": []}}, {"model": "auth.user", "fields": {"password": "pbkdf2_sha256$600000$VqC3GfkndmNuJY1J9J1CQq$G0S2AVX0u8TMrXSDU7zjfp1B4TvemBUDo6ez18zt1pg=", "last_login": null, "is_superuser": false, "username": "pierre.nguema_13", "first_name": "Pierre", "last_name": "Nguema", "email": "pierre.nguema_13@example.com", "is_staff": false, "is_active": true, "date_joined": "2026-05-12T16:20:29.987Z", "groups": [], "user_permissions": []}}, {"model": "auth.user", "fields": {"password": "pbkdf2_sha256$600000$WxdFsNKjRlVLC8bGj8K3X5$NOIJgL8ySj68eiB2Btc15CJga66IBA+sJObo27NtRaQ=", "last_login": "2026-05-17T18:32:59.483Z", "is_superuser": false, "username": "NANA", "first_name": "Jeanne", "last_name": "NOGHA", "email": "anhe@gmail.com", "is_staff": false, "is_active": true, "date_joined": "2026-05-15T14:01:30.192Z", "groups": [], "user_permissions": []}}, {"model": "sessions.session", "pk": "acs2h8z5olwuvgpc5xab2bnhtbs942e2", "fields": {"session_data": ".eJxVjEEOwiAQRe_C2hCYSgGX7j0DGWZAqgaS0q6Md7dNutDtf-_9twi4LiWsPc1hYnERAOL0O0akZ6o74QfWe5PU6jJPUe6KPGiXt8bpdT3cv4OCvWy10nkgVBodZBoRyWqfLeVMaBJ4Z9gBkkpxGLRl5SwBm_GcNgetZy8-Xyr7OPY:1wOgIN:oiMLJQSoGsBqTVd7xUaiXpIPYl2t00VIn4L-UnUr0Ok", "expire_date": "2026-05-31T18:32:59.490Z"}}, {"model": "core.province", "pk": 10, "fields": {"nom_province": "Estuaire", "code_province": "EST", "description": null}}, {"model": "core.province", "pk": 11, "fields": {"nom_province": "Haut-Ogooué", "code_province": "HO", "description": null}}, {"model": "core.province", "pk": 12, "fields": {"nom_province": "Moyen-Ogooué", "code_province": "MO", "description": null}}, {"model": "core.province", "pk": 13, "fields": {"nom_province": "Ngounié", "code_province": "NG", "description": null}}, {"model": "core.province", "pk": 14, "fields": {"nom_province": "Nyanga", "code_province": "NY", "description": null}}, {"model": "core.province", "pk": 15, "fields": {"nom_province": "Ogooué-Ivindo", "code_province": "OI", "description": null}}, {"model": "core.province", "pk": 16, "fields": {"nom_province": "Ogooué-Lolo", "code_province": "OL", "description": null}}, {"model": "core.province", "pk": 17, "fields": {"nom_province": "Ogooué-Maritime", "code_province": "OM", "description": null}}, {"model": "core.province", "pk": 18, "fields": {"nom_province": "Woleu-Ntem", "code_province": "WN", "description": null}}, {"model": "core.ville", "pk": 46, "fields": {"nom_ville": "Libreville", "code_postal": null, "province": 10, "description": null}}, {"model": "core.ville", "pk": 47, "fields": {"nom_ville": "Owendo", "code_postal": null, "province": 10, "description": null}}, {"model": "core.ville", "pk": 48, "fields": {"nom_ville": "Ntoum", "code_postal": null, "province": 10, "description": null}}, {"model": "core.ville", "pk": 49, "fields": {"nom_ville": "Franceville", "code_postal": null, "province": 11, "description": null}}, {"model": "core.ville", "pk": 50, "fields": {"nom_ville": "Moanda", "code_postal": null, "province": 11, "description": null}}, {"model": "core.ville", "pk": 51, "fields": {"nom_ville": "Mounana", "code_postal": null, "province": 11, "description": null}}, {"model": "core.ville", "pk": 52, "fields": {"nom_ville": "Lambaréné", "code_postal": null, "province": 12, "description": null}}, {"model": "core.ville", "pk": 53, "fields": {"nom_ville": "Mouila", "code_postal": null, "province": 12, "description": null}}, {"model": "core.ville", "pk": 54, "fields": {"nom_ville": "Ndjolé", "code_postal": null, "province": 12, "description": null}}, {"model": "core.ville", "pk": 55, "fields": {"nom_ville": "Mouila", "code_postal": null, "province": 13, "description": null}}, {"model": "core.ville", "pk": 56, "fields": {"nom_ville": "Fougamou", "code_postal": null, "province": 13, "description": null}}, {"model": "core.ville", "pk": 57, "fields": {"nom_ville": "Ndendé", "code_postal": null, "province": 13, "description": null}}, {"model": "core.ville", "pk": 58, "fields": {"nom_ville": "Tchibanga", "code_postal": null, "province": 14, "description": null}}, {"model": "core.ville", "pk": 59, "fields": {"nom_ville": "Mayumba", "code_postal": null, "province": 14, "description": null}}, {"model": "core.ville", "pk": 60, "fields": {"nom_ville": "Moungoundou", "code_postal": null, "province": 14, "description": null}}, {"model": "core.ville", "pk": 61, "fields": {"nom_ville": "Makokou", "code_postal": null, "province": 15, "description": null}}, {"model": "core.ville", "pk": 62, "fields": {"nom_ville": "Mékambo", "code_postal": null, "province": 15, "description": null}}, {"model": "core.ville", "pk": 63, "fields": {"nom_ville": "Booué", "code_postal": null, "province": 15, "description": null}}, {"model": "core.ville", "pk": 64, "fields": {"nom_ville": "Koulamoutou", "code_postal": null, "province": 16, "description": null}}, {"model": "core.ville", "pk": 65, "fields": {"nom_ville": "Lastoursville", "code_postal": null, "province": 16, "description": null}}, {"model": "core.ville", "pk": 66, "fields": {"nom_ville": "Poubara", "code_postal": null, "province": 16, "description": null}}, {"model": "core.ville", "pk": 67, "fields": {"nom_ville": "Port-Gentil", "code_postal": null, "province": 17, "description": null}}, {"model": "core.ville", "pk": 68, "fields": {"nom_ville": "Omboué", "code_postal": null, "province": 17, "description": null}}, {"model": "core.ville", "pk": 69, "fields": {"nom_ville": "Gamba", "code_postal": null, "province": 17, "description": null}}, {"model": "core.ville", "pk": 70, "fields": {"nom_ville": "Oyem", "code_postal": null, "province": 18, "description": null}}, {"model": "core.ville", "pk": 71, "fields": {"nom_ville": "Bitam", "code_postal": null, "province": 18, "description": null}}, {"model": "core.ville", "pk": 72, "fields": {"nom_ville": "Mitzic", "code_postal": null, "province": 18, "description": null}}, {"model": "core.filiere", "pk": 11, "fields": {"nom_filiere": "Informatique", "code_filiere": "I", "description": "Études en sciences informatiques et programmation"}}, {"model": "core.filiere", "pk": 12, "fields": {"nom_filiere": "Gestion Administrative", "code_filiere": "GA", "description": "Sciences de gestion et administration des entreprises"}}, {"model": "core.filiere", "pk": 13, "fields": {"nom_filiere": "Science économie", "code_filiere": "SC", "description": "La filière Sciences économiques analyse le fonctionnement de l’économie et des comportements économiques afin de comprendre, expliquer et prévoir les phénomènes liés à la production, la consommation et la distribution des ressources."}}, {"model": "core.filiere", "pk": 14, "fields": {"nom_filiere": "Droit privé", "code_filiere": "DP", "description": "La filière Droit privé étudie l’ensemble des règles qui encadrent les relations entre personnes et organisations afin de former des professionnels capables d’analyser, conseiller et résoudre des situations juridiques privées."}}, {"model": "core.niveau", "pk": 9, "fields": {"nom_niveau": "Licence 1", "code_niveau": "L1"}}, {"model": "core.niveau", "pk": 10, "fields": {"nom_niveau": "Licence 2", "code_niveau": "L2"}}, {"model": "core.niveau", "pk": 11, "fields": {"nom_niveau": "Licence 3", "code_niveau": "L3"}}, {"model": "core.matiere", "pk": 41, "fields": {"nom_matiere": "Mathématiques", "code_matiere": "MATHÉMAT", "description": null, "niveau": 9, "volume_horaire": 45}}, {"model": "core.matiere", "pk": 42, "fields": {"nom_matiere": "Informatique", "code_matiere": "INFORMAT", "description": null, "niveau": 9, "volume_horaire": 45}}, {"model": "core.matiere", "pk": 43, "fields": {"nom_matiere": "Français", "code_matiere": "FRANÇAIS", "description": null, "niveau": 9, "volume_horaire": 45}}, {"model": "core.matiere", "pk": 44, "fields": {"nom_matiere": "Algorithmique", "code_matiere": "ALGORITH", "description": null, "niveau": 10, "volume_horaire": 45}}, {"model": "core.matiere", "pk": 45, "fields": {"nom_matiere": "Comptabilité", "code_matiere": "COMPTABI", "description": null, "niveau": 10, "volume_horaire": 45}}, {"model": "core.matiere", "pk": 46, "fields": {"nom_matiere": "Droit Civil", "code_matiere": "DROIT CI", "description": null, "niveau": 10, "volume_horaire": 45}}, {"model": "core.matiere", "pk": 47, "fields": {"nom_matiere": "Bases de données", "code_matiere": "BASES DE", "description": null, "niveau": 11, "volume_horaire": 45}}, {"model": "core.matiere", "pk": 48, "fields": {"nom_matiere": "Finance", "code_matiere": "FINANCE", "description": null, "niveau": 11, "volume_horaire": 45}}, {"model": "core.matiere", "pk": 49, "fields": {"nom_matiere": "Droit des Affaires", "code_matiere": "DROIT DE", "description": null, "niveau": 11, "volume_horaire": 45}}, {"model": "core.matiere", "pk": 50, "fields": {"nom_matiere": "Introduction au Droit", "code_matiere": "INTRODUC", "description": null, "niveau": 9, "volume_horaire": 45}}, {"model": "core.etablissement", "pk": 7, "fields": {"nom_etab": "Université Omar Bongo Ondimba", "type_etab": "universite", "ville": 46, "adresse": "Avenue Omar Bongo, Libreville", "telephone": "+241 01 45 67 89", "email": "contact@uob.ga", "site_web": null, "description": "Première université publique du Gabon", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 8, "fields": {"nom_etab": "Université des Sciences et Techniques de Masuku", "type_etab": "universite", "ville": 49, "adresse": "Campus de Masuku, Franceville", "telephone": "+241 01 45 67 90", "email": "info@ustm.ga", "site_web": null, "description": "Université spécialisée en sciences et technologies", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 9, "fields": {"nom_etab": "Institut National des Sciences de Gestion", "type_etab": "institut", "ville": 67, "adresse": "Boulevard Triomphal, Port-Gentil", "telephone": "+241 01 45 67 92", "email": "info@insg.ga", "site_web": null, "description": "École de commerce et de gestion", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 10, "fields": {"nom_etab": "Université de Bitam", "type_etab": "universite", "ville": 71, "adresse": "Avenue principale, Bitam", "telephone": "+241 01 45 6789", "email": "contact7@université_de_bitam.ga", "site_web": "www.université_de_bitam.ga", "description": "Établissement d'excellence situé à Bitam, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 11, "fields": {"nom_etab": "École Supérieure de Bitam 2", "type_etab": "ecole_sup", "ville": 71, "adresse": "Avenue principale, Bitam", "telephone": "+241 01 45 68810", "email": "contact8@école_supérieure_de_bitam_2.ga", "site_web": "www.école_supérieure_de_bitam_2.ga", "description": "Établissement d'excellence situé à Bitam, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 12, "fields": {"nom_etab": "Institut de Bitam 3", "type_etab": "institut", "ville": 71, "adresse": "Avenue principale, Bitam", "telephone": "+241 01 45 69811", "email": "contact9@institut_de_bitam_3.ga", "site_web": "www.institut_de_bitam_3.ga", "description": "Établissement d'excellence situé à Bitam, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 13, "fields": {"nom_etab": "Université de Booué", "type_etab": "universite", "ville": 63, "adresse": "Avenue principale, Booué", "telephone": "+241 01 45 6789", "email": "contact7@université_de_booué.ga", "site_web": "www.université_de_booué.ga", "description": "Établissement d'excellence situé à Booué, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 14, "fields": {"nom_etab": "École Supérieure de Booué 2", "type_etab": "ecole_sup", "ville": 63, "adresse": "Avenue principale, Booué", "telephone": "+241 01 45 68810", "email": "contact8@école_supérieure_de_booué_2.ga", "site_web": "www.école_supérieure_de_booué_2.ga", "description": "Établissement d'excellence situé à Booué, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 15, "fields": {"nom_etab": "Institut de Booué 3", "type_etab": "institut", "ville": 63, "adresse": "Avenue principale, Booué", "telephone": "+241 01 45 69811", "email": "contact9@institut_de_booué_3.ga", "site_web": "www.institut_de_booué_3.ga", "description": "Établissement d'excellence situé à Booué, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 16, "fields": {"nom_etab": "Université de Fougamou", "type_etab": "universite", "ville": 56, "adresse": "Avenue principale, Fougamou", "telephone": "+241 01 45 6789", "email": "contact7@université_de_fougamou.ga", "site_web": "www.université_de_fougamou.ga", "description": "Établissement d'excellence situé à Fougamou, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 17, "fields": {"nom_etab": "École Supérieure de Fougamou 2", "type_etab": "ecole_sup", "ville": 56, "adresse": "Avenue principale, Fougamou", "telephone": "+241 01 45 68810", "email": "contact8@école_supérieure_de_fougamou_2.ga", "site_web": "www.école_supérieure_de_fougamou_2.ga", "description": "Établissement d'excellence situé à Fougamou, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 18, "fields": {"nom_etab": "Institut de Fougamou 3", "type_etab": "institut", "ville": 56, "adresse": "Avenue principale, Fougamou", "telephone": "+241 01 45 69811", "email": "contact9@institut_de_fougamou_3.ga", "site_web": "www.institut_de_fougamou_3.ga", "description": "Établissement d'excellence situé à Fougamou, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 19, "fields": {"nom_etab": "Université de Franceville 1", "type_etab": "universite", "ville": 49, "adresse": "Avenue principale, Franceville", "telephone": "+241 01 45 6789", "email": "contact7@université_de_franceville_1.ga", "site_web": "www.université_de_franceville_1.ga", "description": "Établissement d'excellence situé à Franceville, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 20, "fields": {"nom_etab": "École Supérieure de Franceville 2", "type_etab": "ecole_sup", "ville": 49, "adresse": "Avenue principale, Franceville", "telephone": "+241 01 45 68810", "email": "contact8@école_supérieure_de_franceville_2.ga", "site_web": "www.école_supérieure_de_franceville_2.ga", "description": "Établissement d'excellence situé à Franceville, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 21, "fields": {"nom_etab": "Université de Gamba", "type_etab": "universite", "ville": 69, "adresse": "Avenue principale, Gamba", "telephone": "+241 01 45 6789", "email": "contact7@université_de_gamba.ga", "site_web": "www.université_de_gamba.ga", "description": "Établissement d'excellence situé à Gamba, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 22, "fields": {"nom_etab": "École Supérieure de Gamba 2", "type_etab": "ecole_sup", "ville": 69, "adresse": "Avenue principale, Gamba", "telephone": "+241 01 45 68810", "email": "contact8@école_supérieure_de_gamba_2.ga", "site_web": "www.école_supérieure_de_gamba_2.ga", "description": "Établissement d'excellence situé à Gamba, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 23, "fields": {"nom_etab": "Institut de Gamba 3", "type_etab": "institut", "ville": 69, "adresse": "Avenue principale, Gamba", "telephone": "+241 01 45 69811", "email": "contact9@institut_de_gamba_3.ga", "site_web": "www.institut_de_gamba_3.ga", "description": "Établissement d'excellence situé à Gamba, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 24, "fields": {"nom_etab": "Université de Koulamoutou", "type_etab": "universite", "ville": 64, "adresse": "Avenue principale, Koulamoutou", "telephone": "+241 01 45 6789", "email": "contact7@université_de_koulamoutou.ga", "site_web": "www.université_de_koulamoutou.ga", "description": "Établissement d'excellence situé à Koulamoutou, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 25, "fields": {"nom_etab": "École Supérieure de Koulamoutou 2", "type_etab": "ecole_sup", "ville": 64, "adresse": "Avenue principale, Koulamoutou", "telephone": "+241 01 45 68810", "email": "contact8@école_supérieure_de_koulamoutou_2.ga", "site_web": "www.école_supérieure_de_koulamoutou_2.ga", "description": "Établissement d'excellence situé à Koulamoutou, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 26, "fields": {"nom_etab": "Institut de Koulamoutou 3", "type_etab": "institut", "ville": 64, "adresse": "Avenue principale, Koulamoutou", "telephone": "+241 01 45 69811", "email": "contact9@institut_de_koulamoutou_3.ga", "site_web": "www.institut_de_koulamoutou_3.ga", "description": "Établissement d'excellence situé à Koulamoutou, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 27, "fields": {"nom_etab": "Université de Lambaréné", "type_etab": "universite", "ville": 52, "adresse": "Avenue principale, Lambaréné", "telephone": "+241 01 45 6789", "email": "contact7@université_de_lambaréné.ga", "site_web": "www.université_de_lambaréné.ga", "description": "Établissement d'excellence situé à Lambaréné, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 28, "fields": {"nom_etab": "École Supérieure de Lambaréné 2", "type_etab": "ecole_sup", "ville": 52, "adresse": "Avenue principale, Lambaréné", "telephone": "+241 01 45 68810", "email": "contact8@école_supérieure_de_lambaréné_2.ga", "site_web": "www.école_supérieure_de_lambaréné_2.ga", "description": "Établissement d'excellence situé à Lambaréné, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 29, "fields": {"nom_etab": "Institut de Lambaréné 3", "type_etab": "institut", "ville": 52, "adresse": "Avenue principale, Lambaréné", "telephone": "+241 01 45 69811", "email": "contact9@institut_de_lambaréné_3.ga", "site_web": "www.institut_de_lambaréné_3.ga", "description": "Établissement d'excellence situé à Lambaréné, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 30, "fields": {"nom_etab": "Université de Lastoursville", "type_etab": "universite", "ville": 65, "adresse": "Avenue principale, Lastoursville", "telephone": "+241 01 45 6789", "email": "contact7@université_de_lastoursville.ga", "site_web": "www.université_de_lastoursville.ga", "description": "Établissement d'excellence situé à Lastoursville, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 31, "fields": {"nom_etab": "École Supérieure de Lastoursville 2", "type_etab": "ecole_sup", "ville": 65, "adresse": "Avenue principale, Lastoursville", "telephone": "+241 01 45 68810", "email": "contact8@école_supérieure_de_lastoursville_2.ga", "site_web": "www.école_supérieure_de_lastoursville_2.ga", "description": "Établissement d'excellence situé à Lastoursville, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 32, "fields": {"nom_etab": "Institut de Lastoursville 3", "type_etab": "institut", "ville": 65, "adresse": "Avenue principale, Lastoursville", "telephone": "+241 01 45 69811", "email": "contact9@institut_de_lastoursville_3.ga", "site_web": "www.institut_de_lastoursville_3.ga", "description": "Établissement d'excellence situé à Lastoursville, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 33, "fields": {"nom_etab": "Université de Libreville 1", "type_etab": "universite", "ville": 46, "adresse": "Avenue principale, Libreville", "telephone": "+241 01 45 6789", "email": "contact7@université_de_libreville_1.ga", "site_web": "www.université_de_libreville_1.ga", "description": "Établissement d'excellence situé à Libreville, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 34, "fields": {"nom_etab": "École Supérieure de Libreville 2", "type_etab": "ecole_sup", "ville": 46, "adresse": "Avenue principale, Libreville", "telephone": "+241 01 45 68810", "email": "contact8@école_supérieure_de_libreville_2.ga", "site_web": "www.école_supérieure_de_libreville_2.ga", "description": "Établissement d'excellence situé à Libreville, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 35, "fields": {"nom_etab": "Université de Makokou", "type_etab": "universite", "ville": 61, "adresse": "Avenue principale, Makokou", "telephone": "+241 01 45 6789", "email": "contact7@université_de_makokou.ga", "site_web": "www.université_de_makokou.ga", "description": "Établissement d'excellence situé à Makokou, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 36, "fields": {"nom_etab": "École Supérieure de Makokou 2", "type_etab": "ecole_sup", "ville": 61, "adresse": "Avenue principale, Makokou", "telephone": "+241 01 45 68810", "email": "contact8@école_supérieure_de_makokou_2.ga", "site_web": "www.école_supérieure_de_makokou_2.ga", "description": "Établissement d'excellence situé à Makokou, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 37, "fields": {"nom_etab": "Institut de Makokou 3", "type_etab": "institut", "ville": 61, "adresse": "Avenue principale, Makokou", "telephone": "+241 01 45 69811", "email": "contact9@institut_de_makokou_3.ga", "site_web": "www.institut_de_makokou_3.ga", "description": "Établissement d'excellence situé à Makokou, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 38, "fields": {"nom_etab": "Université de Mayumba", "type_etab": "universite", "ville": 59, "adresse": "Avenue principale, Mayumba", "telephone": "+241 01 45 6789", "email": "contact7@université_de_mayumba.ga", "site_web": "www.université_de_mayumba.ga", "description": "Établissement d'excellence situé à Mayumba, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 39, "fields": {"nom_etab": "École Supérieure de Mayumba 2", "type_etab": "ecole_sup", "ville": 59, "adresse": "Avenue principale, Mayumba", "telephone": "+241 01 45 68810", "email": "contact8@école_supérieure_de_mayumba_2.ga", "site_web": "www.école_supérieure_de_mayumba_2.ga", "description": "Établissement d'excellence situé à Mayumba, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 40, "fields": {"nom_etab": "Institut de Mayumba 3", "type_etab": "institut", "ville": 59, "adresse": "Avenue principale, Mayumba", "telephone": "+241 01 45 69811", "email": "contact9@institut_de_mayumba_3.ga", "site_web": "www.institut_de_mayumba_3.ga", "description": "Établissement d'excellence situé à Mayumba, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 41, "fields": {"nom_etab": "Université de Mékambo", "type_etab": "universite", "ville": 62, "adresse": "Avenue principale, Mékambo", "telephone": "+241 01 45 6789", "email": "contact7@université_de_mékambo.ga", "site_web": "www.université_de_mékambo.ga", "description": "Établissement d'excellence situé à Mékambo, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 42, "fields": {"nom_etab": "École Supérieure de Mékambo 2", "type_etab": "ecole_sup", "ville": 62, "adresse": "Avenue principale, Mékambo", "telephone": "+241 01 45 68810", "email": "contact8@école_supérieure_de_mékambo_2.ga", "site_web": "www.école_supérieure_de_mékambo_2.ga", "description": "Établissement d'excellence situé à Mékambo, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 43, "fields": {"nom_etab": "Institut de Mékambo 3", "type_etab": "institut", "ville": 62, "adresse": "Avenue principale, Mékambo", "telephone": "+241 01 45 69811", "email": "contact9@institut_de_mékambo_3.ga", "site_web": "www.institut_de_mékambo_3.ga", "description": "Établissement d'excellence situé à Mékambo, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 44, "fields": {"nom_etab": "Université de Mitzic", "type_etab": "universite", "ville": 72, "adresse": "Avenue principale, Mitzic", "telephone": "+241 01 45 6789", "email": "contact7@université_de_mitzic.ga", "site_web": "www.université_de_mitzic.ga", "description": "Établissement d'excellence situé à Mitzic, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 45, "fields": {"nom_etab": "École Supérieure de Mitzic 2", "type_etab": "ecole_sup", "ville": 72, "adresse": "Avenue principale, Mitzic", "telephone": "+241 01 45 68810", "email": "contact8@école_supérieure_de_mitzic_2.ga", "site_web": "www.école_supérieure_de_mitzic_2.ga", "description": "Établissement d'excellence situé à Mitzic, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 46, "fields": {"nom_etab": "Institut de Mitzic 3", "type_etab": "institut", "ville": 72, "adresse": "Avenue principale, Mitzic", "telephone": "+241 01 45 69811", "email": "contact9@institut_de_mitzic_3.ga", "site_web": "www.institut_de_mitzic_3.ga", "description": "Établissement d'excellence situé à Mitzic, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 47, "fields": {"nom_etab": "Université de Moanda", "type_etab": "universite", "ville": 50, "adresse": "Avenue principale, Moanda", "telephone": "+241 01 45 6789", "email": "contact7@université_de_moanda.ga", "site_web": "www.université_de_moanda.ga", "description": "Établissement d'excellence situé à Moanda, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 48, "fields": {"nom_etab": "École Supérieure de Moanda 2", "type_etab": "ecole_sup", "ville": 50, "adresse": "Avenue principale, Moanda", "telephone": "+241 01 45 68810", "email": "contact8@école_supérieure_de_moanda_2.ga", "site_web": "www.école_supérieure_de_moanda_2.ga", "description": "Établissement d'excellence situé à Moanda, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 49, "fields": {"nom_etab": "Institut de Moanda 3", "type_etab": "institut", "ville": 50, "adresse": "Avenue principale, Moanda", "telephone": "+241 01 45 69811", "email": "contact9@institut_de_moanda_3.ga", "site_web": "www.institut_de_moanda_3.ga", "description": "Établissement d'excellence situé à Moanda, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 50, "fields": {"nom_etab": "Université de Mouila", "type_etab": "universite", "ville": 53, "adresse": "Avenue principale, Mouila", "telephone": "+241 01 45 6789", "email": "contact7@université_de_mouila.ga", "site_web": "www.université_de_mouila.ga", "description": "Établissement d'excellence situé à Mouila, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 51, "fields": {"nom_etab": "École Supérieure de Mouila 2", "type_etab": "ecole_sup", "ville": 53, "adresse": "Avenue principale, Mouila", "telephone": "+241 01 45 68810", "email": "contact8@école_supérieure_de_mouila_2.ga", "site_web": "www.école_supérieure_de_mouila_2.ga", "description": "Établissement d'excellence situé à Mouila, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 52, "fields": {"nom_etab": "Institut de Mouila 3", "type_etab": "institut", "ville": 53, "adresse": "Avenue principale, Mouila", "telephone": "+241 01 45 69811", "email": "contact9@institut_de_mouila_3.ga", "site_web": "www.institut_de_mouila_3.ga", "description": "Établissement d'excellence situé à Mouila, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 53, "fields": {"nom_etab": "Université de Mounana", "type_etab": "universite", "ville": 51, "adresse": "Avenue principale, Mounana", "telephone": "+241 01 45 6789", "email": "contact7@université_de_mounana.ga", "site_web": "www.université_de_mounana.ga", "description": "Établissement d'excellence situé à Mounana, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 54, "fields": {"nom_etab": "École Supérieure de Mounana 2", "type_etab": "ecole_sup", "ville": 51, "adresse": "Avenue principale, Mounana", "telephone": "+241 01 45 68810", "email": "contact8@école_supérieure_de_mounana_2.ga", "site_web": "www.école_supérieure_de_mounana_2.ga", "description": "Établissement d'excellence situé à Mounana, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 55, "fields": {"nom_etab": "Institut de Mounana 3", "type_etab": "institut", "ville": 51, "adresse": "Avenue principale, Mounana", "telephone": "+241 01 45 69811", "email": "contact9@institut_de_mounana_3.ga", "site_web": "www.institut_de_mounana_3.ga", "description": "Établissement d'excellence situé à Mounana, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 56, "fields": {"nom_etab": "Université de Moungoundou", "type_etab": "universite", "ville": 60, "adresse": "Avenue principale, Moungoundou", "telephone": "+241 01 45 6789", "email": "contact7@université_de_moungoundou.ga", "site_web": "www.université_de_moungoundou.ga", "description": "Établissement d'excellence situé à Moungoundou, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 57, "fields": {"nom_etab": "École Supérieure de Moungoundou 2", "type_etab": "ecole_sup", "ville": 60, "adresse": "Avenue principale, Moungoundou", "telephone": "+241 01 45 68810", "email": "contact8@école_supérieure_de_moungoundou_2.ga", "site_web": "www.école_supérieure_de_moungoundou_2.ga", "description": "Établissement d'excellence situé à Moungoundou, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 58, "fields": {"nom_etab": "Institut de Moungoundou 3", "type_etab": "institut", "ville": 60, "adresse": "Avenue principale, Moungoundou", "telephone": "+241 01 45 69811", "email": "contact9@institut_de_moungoundou_3.ga", "site_web": "www.institut_de_moungoundou_3.ga", "description": "Établissement d'excellence situé à Moungoundou, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 59, "fields": {"nom_etab": "Université de Ndendé", "type_etab": "universite", "ville": 57, "adresse": "Avenue principale, Ndendé", "telephone": "+241 01 45 6789", "email": "contact7@université_de_ndendé.ga", "site_web": "www.université_de_ndendé.ga", "description": "Établissement d'excellence situé à Ndendé, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 60, "fields": {"nom_etab": "École Supérieure de Ndendé 2", "type_etab": "ecole_sup", "ville": 57, "adresse": "Avenue principale, Ndendé", "telephone": "+241 01 45 68810", "email": "contact8@école_supérieure_de_ndendé_2.ga", "site_web": "www.école_supérieure_de_ndendé_2.ga", "description": "Établissement d'excellence situé à Ndendé, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 61, "fields": {"nom_etab": "Institut de Ndendé 3", "type_etab": "institut", "ville": 57, "adresse": "Avenue principale, Ndendé", "telephone": "+241 01 45 69811", "email": "contact9@institut_de_ndendé_3.ga", "site_web": "www.institut_de_ndendé_3.ga", "description": "Établissement d'excellence situé à Ndendé, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 62, "fields": {"nom_etab": "Université de Ndjolé", "type_etab": "universite", "ville": 54, "adresse": "Avenue principale, Ndjolé", "telephone": "+241 01 45 6789", "email": "contact7@université_de_ndjolé.ga", "site_web": "www.université_de_ndjolé.ga", "description": "Établissement d'excellence situé à Ndjolé, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 63, "fields": {"nom_etab": "École Supérieure de Ndjolé 2", "type_etab": "ecole_sup", "ville": 54, "adresse": "Avenue principale, Ndjolé", "telephone": "+241 01 45 68810", "email": "contact8@école_supérieure_de_ndjolé_2.ga", "site_web": "www.école_supérieure_de_ndjolé_2.ga", "description": "Établissement d'excellence situé à Ndjolé, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 64, "fields": {"nom_etab": "Institut de Ndjolé 3", "type_etab": "institut", "ville": 54, "adresse": "Avenue principale, Ndjolé", "telephone": "+241 01 45 69811", "email": "contact9@institut_de_ndjolé_3.ga", "site_web": "www.institut_de_ndjolé_3.ga", "description": "Établissement d'excellence situé à Ndjolé, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 65, "fields": {"nom_etab": "Université de Ntoum", "type_etab": "universite", "ville": 48, "adresse": "Avenue principale, Ntoum", "telephone": "+241 01 45 6789", "email": "contact7@université_de_ntoum.ga", "site_web": "www.université_de_ntoum.ga", "description": "Établissement d'excellence situé à Ntoum, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 66, "fields": {"nom_etab": "École Supérieure de Ntoum 2", "type_etab": "ecole_sup", "ville": 48, "adresse": "Avenue principale, Ntoum", "telephone": "+241 01 45 68810", "email": "contact8@école_supérieure_de_ntoum_2.ga", "site_web": "www.école_supérieure_de_ntoum_2.ga", "description": "Établissement d'excellence situé à Ntoum, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 67, "fields": {"nom_etab": "Institut de Ntoum 3", "type_etab": "institut", "ville": 48, "adresse": "Avenue principale, Ntoum", "telephone": "+241 01 45 69811", "email": "contact9@institut_de_ntoum_3.ga", "site_web": "www.institut_de_ntoum_3.ga", "description": "Établissement d'excellence situé à Ntoum, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 68, "fields": {"nom_etab": "Université de Omboué", "type_etab": "universite", "ville": 68, "adresse": "Avenue principale, Omboué", "telephone": "+241 01 45 6789", "email": "contact7@université_de_omboué.ga", "site_web": "www.université_de_omboué.ga", "description": "Établissement d'excellence situé à Omboué, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 69, "fields": {"nom_etab": "École Supérieure de Omboué 2", "type_etab": "ecole_sup", "ville": 68, "adresse": "Avenue principale, Omboué", "telephone": "+241 01 45 68810", "email": "contact8@école_supérieure_de_omboué_2.ga", "site_web": "www.école_supérieure_de_omboué_2.ga", "description": "Établissement d'excellence situé à Omboué, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 70, "fields": {"nom_etab": "Institut de Omboué 3", "type_etab": "institut", "ville": 68, "adresse": "Avenue principale, Omboué", "telephone": "+241 01 45 69811", "email": "contact9@institut_de_omboué_3.ga", "site_web": "www.institut_de_omboué_3.ga", "description": "Établissement d'excellence situé à Omboué, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 71, "fields": {"nom_etab": "Université de Owendo", "type_etab": "universite", "ville": 47, "adresse": "Avenue principale, Owendo", "telephone": "+241 01 45 6789", "email": "contact7@université_de_owendo.ga", "site_web": "www.université_de_owendo.ga", "description": "Établissement d'excellence situé à Owendo, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 72, "fields": {"nom_etab": "École Supérieure de Owendo 2", "type_etab": "ecole_sup", "ville": 47, "adresse": "Avenue principale, Owendo", "telephone": "+241 01 45 68810", "email": "contact8@école_supérieure_de_owendo_2.ga", "site_web": "www.école_supérieure_de_owendo_2.ga", "description": "Établissement d'excellence situé à Owendo, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 73, "fields": {"nom_etab": "Institut de Owendo 3", "type_etab": "institut", "ville": 47, "adresse": "Avenue principale, Owendo", "telephone": "+241 01 45 69811", "email": "contact9@institut_de_owendo_3.ga", "site_web": "www.institut_de_owendo_3.ga", "description": "Établissement d'excellence situé à Owendo, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 74, "fields": {"nom_etab": "Université de Oyem", "type_etab": "universite", "ville": 70, "adresse": "Avenue principale, Oyem", "telephone": "+241 01 45 6789", "email": "contact7@université_de_oyem.ga", "site_web": "www.université_de_oyem.ga", "description": "Établissement d'excellence situé à Oyem, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 75, "fields": {"nom_etab": "École Supérieure de Oyem 2", "type_etab": "ecole_sup", "ville": 70, "adresse": "Avenue principale, Oyem", "telephone": "+241 01 45 68810", "email": "contact8@école_supérieure_de_oyem_2.ga", "site_web": "www.école_supérieure_de_oyem_2.ga", "description": "Établissement d'excellence situé à Oyem, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 76, "fields": {"nom_etab": "Institut de Oyem 3", "type_etab": "institut", "ville": 70, "adresse": "Avenue principale, Oyem", "telephone": "+241 01 45 69811", "email": "contact9@institut_de_oyem_3.ga", "site_web": "www.institut_de_oyem_3.ga", "description": "Établissement d'excellence situé à Oyem, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 77, "fields": {"nom_etab": "Université de Port-Gentil 1", "type_etab": "universite", "ville": 67, "adresse": "Avenue principale, Port-Gentil", "telephone": "+241 01 45 6789", "email": "contact7@université_de_port-gentil_1.ga", "site_web": "www.université_de_port-gentil_1.ga", "description": "Établissement d'excellence situé à Port-Gentil, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 78, "fields": {"nom_etab": "École Supérieure de Port-Gentil 2", "type_etab": "ecole_sup", "ville": 67, "adresse": "Avenue principale, Port-Gentil", "telephone": "+241 01 45 68810", "email": "contact8@école_supérieure_de_port-gentil_2.ga", "site_web": "www.école_supérieure_de_port-gentil_2.ga", "description": "Établissement d'excellence situé à Port-Gentil, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 79, "fields": {"nom_etab": "Université de Poubara", "type_etab": "universite", "ville": 66, "adresse": "Avenue principale, Poubara", "telephone": "+241 01 45 6789", "email": "contact7@université_de_poubara.ga", "site_web": "www.université_de_poubara.ga", "description": "Établissement d'excellence situé à Poubara, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 80, "fields": {"nom_etab": "École Supérieure de Poubara 2", "type_etab": "ecole_sup", "ville": 66, "adresse": "Avenue principale, Poubara", "telephone": "+241 01 45 68810", "email": "contact8@école_supérieure_de_poubara_2.ga", "site_web": "www.école_supérieure_de_poubara_2.ga", "description": "Établissement d'excellence situé à Poubara, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 81, "fields": {"nom_etab": "Institut de Poubara 3", "type_etab": "institut", "ville": 66, "adresse": "Avenue principale, Poubara", "telephone": "+241 01 45 69811", "email": "contact9@institut_de_poubara_3.ga", "site_web": "www.institut_de_poubara_3.ga", "description": "Établissement d'excellence situé à Poubara, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 82, "fields": {"nom_etab": "Université de Tchibanga", "type_etab": "universite", "ville": 58, "adresse": "Avenue principale, Tchibanga", "telephone": "+241 01 45 6789", "email": "contact7@université_de_tchibanga.ga", "site_web": "www.université_de_tchibanga.ga", "description": "Établissement d'excellence situé à Tchibanga, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 83, "fields": {"nom_etab": "École Supérieure de Tchibanga 2", "type_etab": "ecole_sup", "ville": 58, "adresse": "Avenue principale, Tchibanga", "telephone": "+241 01 45 68810", "email": "contact8@école_supérieure_de_tchibanga_2.ga", "site_web": "www.école_supérieure_de_tchibanga_2.ga", "description": "Établissement d'excellence situé à Tchibanga, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 84, "fields": {"nom_etab": "Institut de Tchibanga 3", "type_etab": "institut", "ville": 58, "adresse": "Avenue principale, Tchibanga", "telephone": "+241 01 45 69811", "email": "contact9@institut_de_tchibanga_3.ga", "site_web": "www.institut_de_tchibanga_3.ga", "description": "Établissement d'excellence situé à Tchibanga, spécialisé dans l'enseignement supérieur.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 229, "fields": {"nom_etab": "Université de Mouila", "type_etab": "universite", "ville": 55, "adresse": "Avenue principale, Mouila", "telephone": "+241 01 45 6789", "email": "contact7@université_de_mouila.ga", "site_web": "www.université_de_mouila.ga", "description": "Établissement d'excellence situé à Mouila.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 230, "fields": {"nom_etab": "École Supérieure de Mouila", "type_etab": "ecole_sup", "ville": 55, "adresse": "Avenue principale, Mouila", "telephone": "+241 01 45 68810", "email": "contact8@école_supérieure_de_mouila.ga", "site_web": "www.école_supérieure_de_mouila.ga", "description": "Établissement d'excellence situé à Mouila.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.etablissement", "pk": 231, "fields": {"nom_etab": "Institut de Mouila", "type_etab": "institut", "ville": 55, "adresse": "Avenue principale, Mouila", "telephone": "+241 01 45 69811", "email": "contact9@institut_de_mouila.ga", "site_web": "www.institut_de_mouila.ga", "description": "Établissement d'excellence situé à Mouila.", "filieres": [14, 12, 11, 13], "matieres": [44, 47, 45, 46, 49, 48, 43, 42, 50, 41], "niveaux": [9, 10, 11]}}, {"model": "core.inscription", "pk": 1, "fields": {"user": ["NANA"], "telephone": "066248725", "date_naissance": "2003-07-19", "lieu_naissance": "BITAM", "nationalite": "Gabonaise", "niveau_etude": "Licence 3", "etablissement_origine": "INPTIC"}}, {"model": "core.enseignant", "pk": 1, "fields": {"user": ["enseignant"], "specialite": "Ingénieur informatique", "grade": "Docteur", "etablissement": 7, "matieres": []}}, {"model": "core.enseignant", "pk": 2, "fields": {"user": ["jean.mbarga_14"], "specialite": "Expert en Droit privé", "grade": "Professeur", "etablissement": 11, "matieres": [44, 47, 45]}}, {"model": "core.enseignant", "pk": 3, "fields": {"user": ["marie.ondo_14"], "specialite": "Expert en Droit privé", "grade": "Maître de Conférences", "etablissement": 14, "matieres": [44, 47, 45]}}, {"model": "core.enseignant", "pk": 4, "fields": {"user": ["pierre.nguema_14"], "specialite": "Expert en Droit privé", "grade": "Assistant", "etablissement": 17, "matieres": [44, 47, 45]}}, {"model": "core.enseignant", "pk": 5, "fields": {"user": ["jean.mbarga_12"], "specialite": "Expert en Gestion Administrative", "grade": "Professeur", "etablissement": 11, "matieres": [44, 47, 45]}}, {"model": "core.enseignant", "pk": 6, "fields": {"user": ["marie.ondo_12"], "specialite": "Expert en Gestion Administrative", "grade": "Maître de Conférences", "etablissement": 14, "matieres": [44, 47, 45]}}, {"model": "core.enseignant", "pk": 7, "fields": {"user": ["pierre.nguema_12"], "specialite": "Expert en Gestion Administrative", "grade": "Assistant", "etablissement": 17, "matieres": [44, 47, 45]}}, {"model": "core.enseignant", "pk": 8, "fields": {"user": ["jean.mbarga_11"], "specialite": "Expert en Informatique", "grade": "Professeur", "etablissement": 11, "matieres": [44, 47, 45]}}, {"model": "core.enseignant", "pk": 9, "fields": {"user": ["marie.ondo_11"], "specialite": "Expert en Informatique", "grade": "Maître de Conférences", "etablissement": 14, "matieres": [44, 47, 45]}}, {"model": "core.enseignant", "pk": 10, "fields": {"user": ["pierre.nguema_11"], "specialite": "Expert en Informatique", "grade": "Assistant", "etablissement": 17, "matieres": [44, 47, 45]}}, {"model": "core.enseignant", "pk": 11, "fields": {"user": ["jean.mbarga_13"], "specialite": "Expert en Science économie", "grade": "Professeur", "etablissement": 11, "matieres": [44, 47, 45]}}, {"model": "core.enseignant", "pk": 12, "fields": {"user": ["marie.ondo_13"], "specialite": "Expert en Science économie", "grade": "Maître de Conférences", "etablissement": 14, "matieres": [44, 47, 45]}}, {"model": "core.enseignant", "pk": 13, "fields": {"user": ["pierre.nguema_13"], "specialite": "Expert en Science économie", "grade": "Assistant", "etablissement": 17, "matieres": [44, 47, 45]}}, {"model": "core.supportcours", "pk": 1, "fields": {"titre": "Initiation à l'algo", "description": "", "matiere": 44, "enseignant": 1, "fichier_support": "supports/Cours_WebTV_Marvel_ND_MMi_L2_2023_240604_152505.pdf", "date_ajout": "2026-05-12T15:56:09.870Z"}}, {"model": "core.supportcours", "pk": 2, "fields": {"titre": "Cours du droit des aff", "description": "Le Droit des affaires forme des spécialistes des règles juridiques qui encadrent l’activité des entreprises afin de prévenir les risques, sécuriser les transactions et accompagner le développement des organisations.", "matiere": 49, "enseignant": 3, "fichier_support": "supports/GdP_SUPPORT_MMI2_FI2.pdf", "date_ajout": "2026-05-12T17:20:15.634Z"}}, {"model": "admin.logentry", "pk": 1, "fields": {"action_time": "2026-05-12T15:48:27.154Z", "user": ["admin"], "content_type": ["core", "filiere"], "object_id": "14", "object_repr": "Droi privé", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 2, "fields": {"action_time": "2026-05-12T15:48:49.582Z", "user": ["admin"], "content_type": ["core", "filiere"], "object_id": "14", "object_repr": "Droit privé", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Nom de la fili\\u00e8re\"]}}]"}}, {"model": "admin.logentry", "pk": 3, "fields": {"action_time": "2026-05-12T15:49:59.207Z", "user": ["admin"], "content_type": ["core", "filiere"], "object_id": "13", "object_repr": "Science économie", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Nom de la fili\\u00e8re\", \"Code de la fili\\u00e8re\", \"Description\"]}}]"}}, {"model": "admin.logentry", "pk": 4, "fields": {"action_time": "2026-05-12T15:50:36.609Z", "user": ["admin"], "content_type": ["core", "filiere"], "object_id": "12", "object_repr": "Gestion Administrative", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Nom de la fili\\u00e8re\", \"Code de la fili\\u00e8re\"]}}]"}}, {"model": "admin.logentry", "pk": 5, "fields": {"action_time": "2026-05-12T15:50:57.441Z", "user": ["admin"], "content_type": ["core", "filiere"], "object_id": "11", "object_repr": "Informatique", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Code de la fili\\u00e8re\"]}}]"}}, {"model": "admin.logentry", "pk": 6, "fields": {"action_time": "2026-05-12T15:55:45.338Z", "user": ["admin"], "content_type": ["core", "enseignant"], "object_id": "1", "object_repr": "Jean Mboumba - Ingénieur informatique", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 7, "fields": {"action_time": "2026-05-12T15:56:09.871Z", "user": ["admin"], "content_type": ["core", "supportcours"], "object_id": "1", "object_repr": "Initiation à l'algo", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 8, "fields": {"action_time": "2026-05-12T17:20:15.636Z", "user": ["admin"], "content_type": ["core", "supportcours"], "object_id": "2", "object_repr": "Cours du droit des aff", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}]
+[
+  {
+    "model": "auth.user",
+    "fields": {
+      "password": "pbkdf2_sha256$600000$IMpBNn5ldrmZZUMfvC91GS$eT8akE8hy/RTXtAsznUZm9bASgv5YnvL+Qmo1oDSWeQ=",
+      "last_login": "2026-05-11T22:23:44.407Z",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "admin@enseignement-sup.ga",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2026-05-11T15:36:30.503Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "fields": {
+      "password": "pbkdf2_sha256$600000$PDYP2xEL6rLb3Ny4jIvIRT$5YH3pQXkODk248Vsfq22XNS3qgpjETUB7eSiS28ozy4=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "enseignant",
+      "first_name": "Jean",
+      "last_name": "Mboumba",
+      "email": "enseignant@gabon.edu",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-05-11T22:38:46.804Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "fields": {
+      "password": "pbkdf2_sha256$600000$9TY1VVJKofHC9lIFRwiX2O$MrU2SC/GG91FUMvVlVetmWqRjFVJHxcUWSj0BrPvkDU=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "etudiant",
+      "first_name": "Paul",
+      "last_name": "Nze",
+      "email": "etudiant@gabon.edu",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-05-11T22:38:48.067Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "fields": {
+      "password": "pbkdf2_sha256$600000$7jsGGxPok5tQYl76Wmr74A$r/X3DVODOikJ2H7L5FrqNQb+WaGW0yxEk6HAy9evXk8=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "enseignant1",
+      "first_name": "Jean",
+      "last_name": "Mboumba",
+      "email": "enseignant1@gabon.edu",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-05-12T15:32:29.126Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "fields": {
+      "password": "pbkdf2_sha256$600000$70H0a2lroNQStNHKCvEVpe$Gw2bKj33bB9ptczRKsV804zjH3PM8jmPPFAuvAsGYeE=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "etudiant1",
+      "first_name": "Paul",
+      "last_name": "Nze",
+      "email": "etudiant1@gabon.edu",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-05-12T15:32:31.486Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "fields": {
+      "password": "pbkdf2_sha256$600000$BTtZfmOEwEalCCRl94PKpB$jLdy9qfBF42EAT/3sPKQDNQ0FttX6yigWcWBsrokYQ4=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "jean.mbarga_14",
+      "first_name": "Jean",
+      "last_name": "Mbarga",
+      "email": "jean.mbarga_14@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-05-12T16:20:15.472Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "fields": {
+      "password": "pbkdf2_sha256$600000$XtcWebEViNgOXthlKgsPkf$uxpBM78QKODUoYw03R9kM4HKlcKxIZrvAVxkXFOVSl0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "marie.ondo_14",
+      "first_name": "Marie",
+      "last_name": "Ondo",
+      "email": "marie.ondo_14@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-05-12T16:20:17.262Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "fields": {
+      "password": "pbkdf2_sha256$600000$RLWeBda0OQNmgYyxCdZG2I$0xCOh5rMyaw6glHO3lk7+UlRmReb4KIwbM3nfzG7t4A=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "pierre.nguema_14",
+      "first_name": "Pierre",
+      "last_name": "Nguema",
+      "email": "pierre.nguema_14@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-05-12T16:20:18.647Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "fields": {
+      "password": "pbkdf2_sha256$600000$WQtu68iJ0ume2BqTt3g13H$T9zd6yS3ZqNPkUbImsKgfmht3eI1Xgk46AT7ufu4X+k=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "jean.mbarga_12",
+      "first_name": "Jean",
+      "last_name": "Mbarga",
+      "email": "jean.mbarga_12@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-05-12T16:20:20.017Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "fields": {
+      "password": "pbkdf2_sha256$600000$fkgaP811uESt4degSgNx7B$hmyQSwp0ng00g0NCMlRxIyqX2RlYfxblW0AN/5X+WXI=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "marie.ondo_12",
+      "first_name": "Marie",
+      "last_name": "Ondo",
+      "email": "marie.ondo_12@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-05-12T16:20:21.050Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "fields": {
+      "password": "pbkdf2_sha256$600000$hmXKp35rFwwqexpV9Ug6yL$ACpviGeUa4ShnAjgTxSMp0+YZxToqT4/xZ972B22Q6c=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "pierre.nguema_12",
+      "first_name": "Pierre",
+      "last_name": "Nguema",
+      "email": "pierre.nguema_12@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-05-12T16:20:22.071Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "fields": {
+      "password": "pbkdf2_sha256$600000$7VELPA940wabMezQm6qGbG$mZSCR6aJIfZD64Euc/vu+8HcLim/U0oRTrqh1uu0ZII=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "jean.mbarga_11",
+      "first_name": "Jean",
+      "last_name": "Mbarga",
+      "email": "jean.mbarga_11@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-05-12T16:20:23.771Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "fields": {
+      "password": "pbkdf2_sha256$600000$KSjymttZIEd8Hi4rSRXVDE$FTpdnYBVQK32wxHu6Nkf3ulTZAreo3Awt1EhmSid/nw=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "marie.ondo_11",
+      "first_name": "Marie",
+      "last_name": "Ondo",
+      "email": "marie.ondo_11@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-05-12T16:20:25.252Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "fields": {
+      "password": "pbkdf2_sha256$600000$XO7bOl0aiTQFe1gNGL1hi2$NzVki0hmd4Snb+FiBNvwlk65QZOJo35T5AAwSUZu6QY=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "pierre.nguema_11",
+      "first_name": "Pierre",
+      "last_name": "Nguema",
+      "email": "pierre.nguema_11@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-05-12T16:20:26.596Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "fields": {
+      "password": "pbkdf2_sha256$600000$XFUlJzzs0t8bBDzccAm0Vd$0PpIFrjGRJjE8D4A+GkPgyhlbZwqys6QjM604W/Ik14=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "jean.mbarga_13",
+      "first_name": "Jean",
+      "last_name": "Mbarga",
+      "email": "jean.mbarga_13@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-05-12T16:20:27.686Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "fields": {
+      "password": "pbkdf2_sha256$600000$bx3lMnXU4aJEsW4uDEYh55$CpXLFk6LXL+PMiQIdWLlifF1AEAKtkWoGi+qU4U1y4Q=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "marie.ondo_13",
+      "first_name": "Marie",
+      "last_name": "Ondo",
+      "email": "marie.ondo_13@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-05-12T16:20:28.883Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "fields": {
+      "password": "pbkdf2_sha256$600000$VqC3GfkndmNuJY1J9J1CQq$G0S2AVX0u8TMrXSDU7zjfp1B4TvemBUDo6ez18zt1pg=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "pierre.nguema_13",
+      "first_name": "Pierre",
+      "last_name": "Nguema",
+      "email": "pierre.nguema_13@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-05-12T16:20:29.987Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "fields": {
+      "password": "pbkdf2_sha256$600000$WxdFsNKjRlVLC8bGj8K3X5$NOIJgL8ySj68eiB2Btc15CJga66IBA+sJObo27NtRaQ=",
+      "last_login": "2026-05-17T18:32:59.483Z",
+      "is_superuser": false,
+      "username": "NANA",
+      "first_name": "Jeanne",
+      "last_name": "NOGHA",
+      "email": "anhe@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-05-15T14:01:30.192Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "acs2h8z5olwuvgpc5xab2bnhtbs942e2",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQRe_C2hCYSgGX7j0DGWZAqgaS0q6Md7dNutDtf-_9twi4LiWsPc1hYnERAOL0O0akZ6o74QfWe5PU6jJPUe6KPGiXt8bpdT3cv4OCvWy10nkgVBodZBoRyWqfLeVMaBJ4Z9gBkkpxGLRl5SwBm_GcNgetZy8-Xyr7OPY:1wOgIN:oiMLJQSoGsBqTVd7xUaiXpIPYl2t00VIn4L-UnUr0Ok",
+      "expire_date": "2026-05-31T18:32:59.490Z"
+    }
+  },
+  {
+    "model": "core.province",
+    "pk": 10,
+    "fields": {
+      "nom_province": "Estuaire",
+      "code_province": "EST",
+      "description": null
+    }
+  },
+  {
+    "model": "core.province",
+    "pk": 11,
+    "fields": {
+      "nom_province": "Haut-OgoouÃ©",
+      "code_province": "HO",
+      "description": null
+    }
+  },
+  {
+    "model": "core.province",
+    "pk": 12,
+    "fields": {
+      "nom_province": "Moyen-OgoouÃ©",
+      "code_province": "MO",
+      "description": null
+    }
+  },
+  {
+    "model": "core.province",
+    "pk": 13,
+    "fields": {
+      "nom_province": "NgouniÃ©",
+      "code_province": "NG",
+      "description": null
+    }
+  },
+  {
+    "model": "core.province",
+    "pk": 14,
+    "fields": {
+      "nom_province": "Nyanga",
+      "code_province": "NY",
+      "description": null
+    }
+  },
+  {
+    "model": "core.province",
+    "pk": 15,
+    "fields": {
+      "nom_province": "OgoouÃ©-Ivindo",
+      "code_province": "OI",
+      "description": null
+    }
+  },
+  {
+    "model": "core.province",
+    "pk": 16,
+    "fields": {
+      "nom_province": "OgoouÃ©-Lolo",
+      "code_province": "OL",
+      "description": null
+    }
+  },
+  {
+    "model": "core.province",
+    "pk": 17,
+    "fields": {
+      "nom_province": "OgoouÃ©-Maritime",
+      "code_province": "OM",
+      "description": null
+    }
+  },
+  {
+    "model": "core.province",
+    "pk": 18,
+    "fields": {
+      "nom_province": "Woleu-Ntem",
+      "code_province": "WN",
+      "description": null
+    }
+  },
+  {
+    "model": "core.ville",
+    "pk": 46,
+    "fields": {
+      "nom_ville": "Libreville",
+      "code_postal": null,
+      "province": 10,
+      "description": null
+    }
+  },
+  {
+    "model": "core.ville",
+    "pk": 47,
+    "fields": {
+      "nom_ville": "Owendo",
+      "code_postal": null,
+      "province": 10,
+      "description": null
+    }
+  },
+  {
+    "model": "core.ville",
+    "pk": 48,
+    "fields": {
+      "nom_ville": "Ntoum",
+      "code_postal": null,
+      "province": 10,
+      "description": null
+    }
+  },
+  {
+    "model": "core.ville",
+    "pk": 49,
+    "fields": {
+      "nom_ville": "Franceville",
+      "code_postal": null,
+      "province": 11,
+      "description": null
+    }
+  },
+  {
+    "model": "core.ville",
+    "pk": 50,
+    "fields": {
+      "nom_ville": "Moanda",
+      "code_postal": null,
+      "province": 11,
+      "description": null
+    }
+  },
+  {
+    "model": "core.ville",
+    "pk": 51,
+    "fields": {
+      "nom_ville": "Mounana",
+      "code_postal": null,
+      "province": 11,
+      "description": null
+    }
+  },
+  {
+    "model": "core.ville",
+    "pk": 52,
+    "fields": {
+      "nom_ville": "LambarÃ©nÃ©",
+      "code_postal": null,
+      "province": 12,
+      "description": null
+    }
+  },
+  {
+    "model": "core.ville",
+    "pk": 53,
+    "fields": {
+      "nom_ville": "Mouila",
+      "code_postal": null,
+      "province": 12,
+      "description": null
+    }
+  },
+  {
+    "model": "core.ville",
+    "pk": 54,
+    "fields": {
+      "nom_ville": "NdjolÃ©",
+      "code_postal": null,
+      "province": 12,
+      "description": null
+    }
+  },
+  {
+    "model": "core.ville",
+    "pk": 55,
+    "fields": {
+      "nom_ville": "Mouila",
+      "code_postal": null,
+      "province": 13,
+      "description": null
+    }
+  },
+  {
+    "model": "core.ville",
+    "pk": 56,
+    "fields": {
+      "nom_ville": "Fougamou",
+      "code_postal": null,
+      "province": 13,
+      "description": null
+    }
+  },
+  {
+    "model": "core.ville",
+    "pk": 57,
+    "fields": {
+      "nom_ville": "NdendÃ©",
+      "code_postal": null,
+      "province": 13,
+      "description": null
+    }
+  },
+  {
+    "model": "core.ville",
+    "pk": 58,
+    "fields": {
+      "nom_ville": "Tchibanga",
+      "code_postal": null,
+      "province": 14,
+      "description": null
+    }
+  },
+  {
+    "model": "core.ville",
+    "pk": 59,
+    "fields": {
+      "nom_ville": "Mayumba",
+      "code_postal": null,
+      "province": 14,
+      "description": null
+    }
+  },
+  {
+    "model": "core.ville",
+    "pk": 60,
+    "fields": {
+      "nom_ville": "Moungoundou",
+      "code_postal": null,
+      "province": 14,
+      "description": null
+    }
+  },
+  {
+    "model": "core.ville",
+    "pk": 61,
+    "fields": {
+      "nom_ville": "Makokou",
+      "code_postal": null,
+      "province": 15,
+      "description": null
+    }
+  },
+  {
+    "model": "core.ville",
+    "pk": 62,
+    "fields": {
+      "nom_ville": "MÃ©kambo",
+      "code_postal": null,
+      "province": 15,
+      "description": null
+    }
+  },
+  {
+    "model": "core.ville",
+    "pk": 63,
+    "fields": {
+      "nom_ville": "BoouÃ©",
+      "code_postal": null,
+      "province": 15,
+      "description": null
+    }
+  },
+  {
+    "model": "core.ville",
+    "pk": 64,
+    "fields": {
+      "nom_ville": "Koulamoutou",
+      "code_postal": null,
+      "province": 16,
+      "description": null
+    }
+  },
+  {
+    "model": "core.ville",
+    "pk": 65,
+    "fields": {
+      "nom_ville": "Lastoursville",
+      "code_postal": null,
+      "province": 16,
+      "description": null
+    }
+  },
+  {
+    "model": "core.ville",
+    "pk": 66,
+    "fields": {
+      "nom_ville": "Poubara",
+      "code_postal": null,
+      "province": 16,
+      "description": null
+    }
+  },
+  {
+    "model": "core.ville",
+    "pk": 67,
+    "fields": {
+      "nom_ville": "Port-Gentil",
+      "code_postal": null,
+      "province": 17,
+      "description": null
+    }
+  },
+  {
+    "model": "core.ville",
+    "pk": 68,
+    "fields": {
+      "nom_ville": "OmbouÃ©",
+      "code_postal": null,
+      "province": 17,
+      "description": null
+    }
+  },
+  {
+    "model": "core.ville",
+    "pk": 69,
+    "fields": {
+      "nom_ville": "Gamba",
+      "code_postal": null,
+      "province": 17,
+      "description": null
+    }
+  },
+  {
+    "model": "core.ville",
+    "pk": 70,
+    "fields": {
+      "nom_ville": "Oyem",
+      "code_postal": null,
+      "province": 18,
+      "description": null
+    }
+  },
+  {
+    "model": "core.ville",
+    "pk": 71,
+    "fields": {
+      "nom_ville": "Bitam",
+      "code_postal": null,
+      "province": 18,
+      "description": null
+    }
+  },
+  {
+    "model": "core.ville",
+    "pk": 72,
+    "fields": {
+      "nom_ville": "Mitzic",
+      "code_postal": null,
+      "province": 18,
+      "description": null
+    }
+  },
+  {
+    "model": "core.filiere",
+    "pk": 11,
+    "fields": {
+      "nom_filiere": "Informatique",
+      "code_filiere": "I",
+      "description": "Ã‰tudes en sciences informatiques et programmation"
+    }
+  },
+  {
+    "model": "core.filiere",
+    "pk": 12,
+    "fields": {
+      "nom_filiere": "Gestion Administrative",
+      "code_filiere": "GA",
+      "description": "Sciences de gestion et administration des entreprises"
+    }
+  },
+  {
+    "model": "core.filiere",
+    "pk": 13,
+    "fields": {
+      "nom_filiere": "Science Ã©conomie",
+      "code_filiere": "SC",
+      "description": "La filiÃ¨re Sciences Ã©conomiques analyse le fonctionnement de lÂ’Ã©conomie et des comportements Ã©conomiques afin de comprendre, expliquer et prÃ©voir les phÃ©nomÃ¨nes liÃ©s Ã  la production, la consommation et la distribution des ressources."
+    }
+  },
+  {
+    "model": "core.filiere",
+    "pk": 14,
+    "fields": {
+      "nom_filiere": "Droit privÃ©",
+      "code_filiere": "DP",
+      "description": "La filiÃ¨re Droit privÃ© Ã©tudie lÂ’ensemble des rÃ¨gles qui encadrent les relations entre personnes et organisations afin de former des professionnels capables dÂ’analyser, conseiller et rÃ©soudre des situations juridiques privÃ©es."
+    }
+  },
+  {
+    "model": "core.niveau",
+    "pk": 9,
+    "fields": {
+      "nom_niveau": "Licence 1",
+      "code_niveau": "L1"
+    }
+  },
+  {
+    "model": "core.niveau",
+    "pk": 10,
+    "fields": {
+      "nom_niveau": "Licence 2",
+      "code_niveau": "L2"
+    }
+  },
+  {
+    "model": "core.niveau",
+    "pk": 11,
+    "fields": {
+      "nom_niveau": "Licence 3",
+      "code_niveau": "L3"
+    }
+  },
+  {
+    "model": "core.matiere",
+    "pk": 41,
+    "fields": {
+      "nom_matiere": "MathÃ©matiques",
+      "code_matiere": "MATHÃ‰MAT",
+      "description": null,
+      "niveau": 9,
+      "volume_horaire": 45
+    }
+  },
+  {
+    "model": "core.matiere",
+    "pk": 42,
+    "fields": {
+      "nom_matiere": "Informatique",
+      "code_matiere": "INFORMAT",
+      "description": null,
+      "niveau": 9,
+      "volume_horaire": 45
+    }
+  },
+  {
+    "model": "core.matiere",
+    "pk": 43,
+    "fields": {
+      "nom_matiere": "FranÃ§ais",
+      "code_matiere": "FRANÃ‡AIS",
+      "description": null,
+      "niveau": 9,
+      "volume_horaire": 45
+    }
+  },
+  {
+    "model": "core.matiere",
+    "pk": 44,
+    "fields": {
+      "nom_matiere": "Algorithmique",
+      "code_matiere": "ALGORITH",
+      "description": null,
+      "niveau": 10,
+      "volume_horaire": 45
+    }
+  },
+  {
+    "model": "core.matiere",
+    "pk": 45,
+    "fields": {
+      "nom_matiere": "ComptabilitÃ©",
+      "code_matiere": "COMPTABI",
+      "description": null,
+      "niveau": 10,
+      "volume_horaire": 45
+    }
+  },
+  {
+    "model": "core.matiere",
+    "pk": 46,
+    "fields": {
+      "nom_matiere": "Droit Civil",
+      "code_matiere": "DROIT CI",
+      "description": null,
+      "niveau": 10,
+      "volume_horaire": 45
+    }
+  },
+  {
+    "model": "core.matiere",
+    "pk": 47,
+    "fields": {
+      "nom_matiere": "Bases de donnÃ©es",
+      "code_matiere": "BASES DE",
+      "description": null,
+      "niveau": 11,
+      "volume_horaire": 45
+    }
+  },
+  {
+    "model": "core.matiere",
+    "pk": 48,
+    "fields": {
+      "nom_matiere": "Finance",
+      "code_matiere": "FINANCE",
+      "description": null,
+      "niveau": 11,
+      "volume_horaire": 45
+    }
+  },
+  {
+    "model": "core.matiere",
+    "pk": 49,
+    "fields": {
+      "nom_matiere": "Droit des Affaires",
+      "code_matiere": "DROIT DE",
+      "description": null,
+      "niveau": 11,
+      "volume_horaire": 45
+    }
+  },
+  {
+    "model": "core.matiere",
+    "pk": 50,
+    "fields": {
+      "nom_matiere": "Introduction au Droit",
+      "code_matiere": "INTRODUC",
+      "description": null,
+      "niveau": 9,
+      "volume_horaire": 45
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 7,
+    "fields": {
+      "nom_etab": "UniversitÃ© Omar Bongo Ondimba",
+      "type_etab": "universite",
+      "ville": 46,
+      "adresse": "Avenue Omar Bongo, Libreville",
+      "telephone": "+241 01 45 67 89",
+      "email": "contact@uob.ga",
+      "site_web": null,
+      "description": "PremiÃ¨re universitÃ© publique du Gabon",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 8,
+    "fields": {
+      "nom_etab": "UniversitÃ© des Sciences et Techniques de Masuku",
+      "type_etab": "universite",
+      "ville": 49,
+      "adresse": "Campus de Masuku, Franceville",
+      "telephone": "+241 01 45 67 90",
+      "email": "info@ustm.ga",
+      "site_web": null,
+      "description": "UniversitÃ© spÃ©cialisÃ©e en sciences et technologies",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 9,
+    "fields": {
+      "nom_etab": "Institut National des Sciences de Gestion",
+      "type_etab": "institut",
+      "ville": 67,
+      "adresse": "Boulevard Triomphal, Port-Gentil",
+      "telephone": "+241 01 45 67 92",
+      "email": "info@insg.ga",
+      "site_web": null,
+      "description": "Ã‰cole de commerce et de gestion",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 10,
+    "fields": {
+      "nom_etab": "UniversitÃ© de Bitam",
+      "type_etab": "universite",
+      "ville": 71,
+      "adresse": "Avenue principale, Bitam",
+      "telephone": "+241 01 45 6789",
+      "email": "contact7@universitÃ©_de_bitam.ga",
+      "site_web": "www.universitÃ©_de_bitam.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Bitam, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 11,
+    "fields": {
+      "nom_etab": "Ã‰cole SupÃ©rieure de Bitam 2",
+      "type_etab": "ecole_sup",
+      "ville": 71,
+      "adresse": "Avenue principale, Bitam",
+      "telephone": "+241 01 45 68810",
+      "email": "contact8@Ã©cole_supÃ©rieure_de_bitam_2.ga",
+      "site_web": "www.Ã©cole_supÃ©rieure_de_bitam_2.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Bitam, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 12,
+    "fields": {
+      "nom_etab": "Institut de Bitam 3",
+      "type_etab": "institut",
+      "ville": 71,
+      "adresse": "Avenue principale, Bitam",
+      "telephone": "+241 01 45 69811",
+      "email": "contact9@institut_de_bitam_3.ga",
+      "site_web": "www.institut_de_bitam_3.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Bitam, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 13,
+    "fields": {
+      "nom_etab": "UniversitÃ© de BoouÃ©",
+      "type_etab": "universite",
+      "ville": 63,
+      "adresse": "Avenue principale, BoouÃ©",
+      "telephone": "+241 01 45 6789",
+      "email": "contact7@universitÃ©_de_boouÃ©.ga",
+      "site_web": "www.universitÃ©_de_boouÃ©.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  BoouÃ©, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 14,
+    "fields": {
+      "nom_etab": "Ã‰cole SupÃ©rieure de BoouÃ© 2",
+      "type_etab": "ecole_sup",
+      "ville": 63,
+      "adresse": "Avenue principale, BoouÃ©",
+      "telephone": "+241 01 45 68810",
+      "email": "contact8@Ã©cole_supÃ©rieure_de_boouÃ©_2.ga",
+      "site_web": "www.Ã©cole_supÃ©rieure_de_boouÃ©_2.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  BoouÃ©, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 15,
+    "fields": {
+      "nom_etab": "Institut de BoouÃ© 3",
+      "type_etab": "institut",
+      "ville": 63,
+      "adresse": "Avenue principale, BoouÃ©",
+      "telephone": "+241 01 45 69811",
+      "email": "contact9@institut_de_boouÃ©_3.ga",
+      "site_web": "www.institut_de_boouÃ©_3.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  BoouÃ©, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 16,
+    "fields": {
+      "nom_etab": "UniversitÃ© de Fougamou",
+      "type_etab": "universite",
+      "ville": 56,
+      "adresse": "Avenue principale, Fougamou",
+      "telephone": "+241 01 45 6789",
+      "email": "contact7@universitÃ©_de_fougamou.ga",
+      "site_web": "www.universitÃ©_de_fougamou.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Fougamou, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 17,
+    "fields": {
+      "nom_etab": "Ã‰cole SupÃ©rieure de Fougamou 2",
+      "type_etab": "ecole_sup",
+      "ville": 56,
+      "adresse": "Avenue principale, Fougamou",
+      "telephone": "+241 01 45 68810",
+      "email": "contact8@Ã©cole_supÃ©rieure_de_fougamou_2.ga",
+      "site_web": "www.Ã©cole_supÃ©rieure_de_fougamou_2.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Fougamou, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 18,
+    "fields": {
+      "nom_etab": "Institut de Fougamou 3",
+      "type_etab": "institut",
+      "ville": 56,
+      "adresse": "Avenue principale, Fougamou",
+      "telephone": "+241 01 45 69811",
+      "email": "contact9@institut_de_fougamou_3.ga",
+      "site_web": "www.institut_de_fougamou_3.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Fougamou, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 19,
+    "fields": {
+      "nom_etab": "UniversitÃ© de Franceville 1",
+      "type_etab": "universite",
+      "ville": 49,
+      "adresse": "Avenue principale, Franceville",
+      "telephone": "+241 01 45 6789",
+      "email": "contact7@universitÃ©_de_franceville_1.ga",
+      "site_web": "www.universitÃ©_de_franceville_1.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Franceville, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 20,
+    "fields": {
+      "nom_etab": "Ã‰cole SupÃ©rieure de Franceville 2",
+      "type_etab": "ecole_sup",
+      "ville": 49,
+      "adresse": "Avenue principale, Franceville",
+      "telephone": "+241 01 45 68810",
+      "email": "contact8@Ã©cole_supÃ©rieure_de_franceville_2.ga",
+      "site_web": "www.Ã©cole_supÃ©rieure_de_franceville_2.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Franceville, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 21,
+    "fields": {
+      "nom_etab": "UniversitÃ© de Gamba",
+      "type_etab": "universite",
+      "ville": 69,
+      "adresse": "Avenue principale, Gamba",
+      "telephone": "+241 01 45 6789",
+      "email": "contact7@universitÃ©_de_gamba.ga",
+      "site_web": "www.universitÃ©_de_gamba.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Gamba, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 22,
+    "fields": {
+      "nom_etab": "Ã‰cole SupÃ©rieure de Gamba 2",
+      "type_etab": "ecole_sup",
+      "ville": 69,
+      "adresse": "Avenue principale, Gamba",
+      "telephone": "+241 01 45 68810",
+      "email": "contact8@Ã©cole_supÃ©rieure_de_gamba_2.ga",
+      "site_web": "www.Ã©cole_supÃ©rieure_de_gamba_2.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Gamba, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 23,
+    "fields": {
+      "nom_etab": "Institut de Gamba 3",
+      "type_etab": "institut",
+      "ville": 69,
+      "adresse": "Avenue principale, Gamba",
+      "telephone": "+241 01 45 69811",
+      "email": "contact9@institut_de_gamba_3.ga",
+      "site_web": "www.institut_de_gamba_3.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Gamba, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 24,
+    "fields": {
+      "nom_etab": "UniversitÃ© de Koulamoutou",
+      "type_etab": "universite",
+      "ville": 64,
+      "adresse": "Avenue principale, Koulamoutou",
+      "telephone": "+241 01 45 6789",
+      "email": "contact7@universitÃ©_de_koulamoutou.ga",
+      "site_web": "www.universitÃ©_de_koulamoutou.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Koulamoutou, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 25,
+    "fields": {
+      "nom_etab": "Ã‰cole SupÃ©rieure de Koulamoutou 2",
+      "type_etab": "ecole_sup",
+      "ville": 64,
+      "adresse": "Avenue principale, Koulamoutou",
+      "telephone": "+241 01 45 68810",
+      "email": "contact8@Ã©cole_supÃ©rieure_de_koulamoutou_2.ga",
+      "site_web": "www.Ã©cole_supÃ©rieure_de_koulamoutou_2.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Koulamoutou, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 26,
+    "fields": {
+      "nom_etab": "Institut de Koulamoutou 3",
+      "type_etab": "institut",
+      "ville": 64,
+      "adresse": "Avenue principale, Koulamoutou",
+      "telephone": "+241 01 45 69811",
+      "email": "contact9@institut_de_koulamoutou_3.ga",
+      "site_web": "www.institut_de_koulamoutou_3.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Koulamoutou, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 27,
+    "fields": {
+      "nom_etab": "UniversitÃ© de LambarÃ©nÃ©",
+      "type_etab": "universite",
+      "ville": 52,
+      "adresse": "Avenue principale, LambarÃ©nÃ©",
+      "telephone": "+241 01 45 6789",
+      "email": "contact7@universitÃ©_de_lambarÃ©nÃ©.ga",
+      "site_web": "www.universitÃ©_de_lambarÃ©nÃ©.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  LambarÃ©nÃ©, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 28,
+    "fields": {
+      "nom_etab": "Ã‰cole SupÃ©rieure de LambarÃ©nÃ© 2",
+      "type_etab": "ecole_sup",
+      "ville": 52,
+      "adresse": "Avenue principale, LambarÃ©nÃ©",
+      "telephone": "+241 01 45 68810",
+      "email": "contact8@Ã©cole_supÃ©rieure_de_lambarÃ©nÃ©_2.ga",
+      "site_web": "www.Ã©cole_supÃ©rieure_de_lambarÃ©nÃ©_2.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  LambarÃ©nÃ©, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 29,
+    "fields": {
+      "nom_etab": "Institut de LambarÃ©nÃ© 3",
+      "type_etab": "institut",
+      "ville": 52,
+      "adresse": "Avenue principale, LambarÃ©nÃ©",
+      "telephone": "+241 01 45 69811",
+      "email": "contact9@institut_de_lambarÃ©nÃ©_3.ga",
+      "site_web": "www.institut_de_lambarÃ©nÃ©_3.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  LambarÃ©nÃ©, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 30,
+    "fields": {
+      "nom_etab": "UniversitÃ© de Lastoursville",
+      "type_etab": "universite",
+      "ville": 65,
+      "adresse": "Avenue principale, Lastoursville",
+      "telephone": "+241 01 45 6789",
+      "email": "contact7@universitÃ©_de_lastoursville.ga",
+      "site_web": "www.universitÃ©_de_lastoursville.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Lastoursville, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 31,
+    "fields": {
+      "nom_etab": "Ã‰cole SupÃ©rieure de Lastoursville 2",
+      "type_etab": "ecole_sup",
+      "ville": 65,
+      "adresse": "Avenue principale, Lastoursville",
+      "telephone": "+241 01 45 68810",
+      "email": "contact8@Ã©cole_supÃ©rieure_de_lastoursville_2.ga",
+      "site_web": "www.Ã©cole_supÃ©rieure_de_lastoursville_2.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Lastoursville, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 32,
+    "fields": {
+      "nom_etab": "Institut de Lastoursville 3",
+      "type_etab": "institut",
+      "ville": 65,
+      "adresse": "Avenue principale, Lastoursville",
+      "telephone": "+241 01 45 69811",
+      "email": "contact9@institut_de_lastoursville_3.ga",
+      "site_web": "www.institut_de_lastoursville_3.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Lastoursville, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 33,
+    "fields": {
+      "nom_etab": "UniversitÃ© de Libreville 1",
+      "type_etab": "universite",
+      "ville": 46,
+      "adresse": "Avenue principale, Libreville",
+      "telephone": "+241 01 45 6789",
+      "email": "contact7@universitÃ©_de_libreville_1.ga",
+      "site_web": "www.universitÃ©_de_libreville_1.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Libreville, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 34,
+    "fields": {
+      "nom_etab": "Ã‰cole SupÃ©rieure de Libreville 2",
+      "type_etab": "ecole_sup",
+      "ville": 46,
+      "adresse": "Avenue principale, Libreville",
+      "telephone": "+241 01 45 68810",
+      "email": "contact8@Ã©cole_supÃ©rieure_de_libreville_2.ga",
+      "site_web": "www.Ã©cole_supÃ©rieure_de_libreville_2.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Libreville, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 35,
+    "fields": {
+      "nom_etab": "UniversitÃ© de Makokou",
+      "type_etab": "universite",
+      "ville": 61,
+      "adresse": "Avenue principale, Makokou",
+      "telephone": "+241 01 45 6789",
+      "email": "contact7@universitÃ©_de_makokou.ga",
+      "site_web": "www.universitÃ©_de_makokou.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Makokou, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 36,
+    "fields": {
+      "nom_etab": "Ã‰cole SupÃ©rieure de Makokou 2",
+      "type_etab": "ecole_sup",
+      "ville": 61,
+      "adresse": "Avenue principale, Makokou",
+      "telephone": "+241 01 45 68810",
+      "email": "contact8@Ã©cole_supÃ©rieure_de_makokou_2.ga",
+      "site_web": "www.Ã©cole_supÃ©rieure_de_makokou_2.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Makokou, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 37,
+    "fields": {
+      "nom_etab": "Institut de Makokou 3",
+      "type_etab": "institut",
+      "ville": 61,
+      "adresse": "Avenue principale, Makokou",
+      "telephone": "+241 01 45 69811",
+      "email": "contact9@institut_de_makokou_3.ga",
+      "site_web": "www.institut_de_makokou_3.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Makokou, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 38,
+    "fields": {
+      "nom_etab": "UniversitÃ© de Mayumba",
+      "type_etab": "universite",
+      "ville": 59,
+      "adresse": "Avenue principale, Mayumba",
+      "telephone": "+241 01 45 6789",
+      "email": "contact7@universitÃ©_de_mayumba.ga",
+      "site_web": "www.universitÃ©_de_mayumba.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Mayumba, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 39,
+    "fields": {
+      "nom_etab": "Ã‰cole SupÃ©rieure de Mayumba 2",
+      "type_etab": "ecole_sup",
+      "ville": 59,
+      "adresse": "Avenue principale, Mayumba",
+      "telephone": "+241 01 45 68810",
+      "email": "contact8@Ã©cole_supÃ©rieure_de_mayumba_2.ga",
+      "site_web": "www.Ã©cole_supÃ©rieure_de_mayumba_2.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Mayumba, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 40,
+    "fields": {
+      "nom_etab": "Institut de Mayumba 3",
+      "type_etab": "institut",
+      "ville": 59,
+      "adresse": "Avenue principale, Mayumba",
+      "telephone": "+241 01 45 69811",
+      "email": "contact9@institut_de_mayumba_3.ga",
+      "site_web": "www.institut_de_mayumba_3.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Mayumba, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 41,
+    "fields": {
+      "nom_etab": "UniversitÃ© de MÃ©kambo",
+      "type_etab": "universite",
+      "ville": 62,
+      "adresse": "Avenue principale, MÃ©kambo",
+      "telephone": "+241 01 45 6789",
+      "email": "contact7@universitÃ©_de_mÃ©kambo.ga",
+      "site_web": "www.universitÃ©_de_mÃ©kambo.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  MÃ©kambo, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 42,
+    "fields": {
+      "nom_etab": "Ã‰cole SupÃ©rieure de MÃ©kambo 2",
+      "type_etab": "ecole_sup",
+      "ville": 62,
+      "adresse": "Avenue principale, MÃ©kambo",
+      "telephone": "+241 01 45 68810",
+      "email": "contact8@Ã©cole_supÃ©rieure_de_mÃ©kambo_2.ga",
+      "site_web": "www.Ã©cole_supÃ©rieure_de_mÃ©kambo_2.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  MÃ©kambo, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 43,
+    "fields": {
+      "nom_etab": "Institut de MÃ©kambo 3",
+      "type_etab": "institut",
+      "ville": 62,
+      "adresse": "Avenue principale, MÃ©kambo",
+      "telephone": "+241 01 45 69811",
+      "email": "contact9@institut_de_mÃ©kambo_3.ga",
+      "site_web": "www.institut_de_mÃ©kambo_3.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  MÃ©kambo, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 44,
+    "fields": {
+      "nom_etab": "UniversitÃ© de Mitzic",
+      "type_etab": "universite",
+      "ville": 72,
+      "adresse": "Avenue principale, Mitzic",
+      "telephone": "+241 01 45 6789",
+      "email": "contact7@universitÃ©_de_mitzic.ga",
+      "site_web": "www.universitÃ©_de_mitzic.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Mitzic, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 45,
+    "fields": {
+      "nom_etab": "Ã‰cole SupÃ©rieure de Mitzic 2",
+      "type_etab": "ecole_sup",
+      "ville": 72,
+      "adresse": "Avenue principale, Mitzic",
+      "telephone": "+241 01 45 68810",
+      "email": "contact8@Ã©cole_supÃ©rieure_de_mitzic_2.ga",
+      "site_web": "www.Ã©cole_supÃ©rieure_de_mitzic_2.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Mitzic, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 46,
+    "fields": {
+      "nom_etab": "Institut de Mitzic 3",
+      "type_etab": "institut",
+      "ville": 72,
+      "adresse": "Avenue principale, Mitzic",
+      "telephone": "+241 01 45 69811",
+      "email": "contact9@institut_de_mitzic_3.ga",
+      "site_web": "www.institut_de_mitzic_3.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Mitzic, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 47,
+    "fields": {
+      "nom_etab": "UniversitÃ© de Moanda",
+      "type_etab": "universite",
+      "ville": 50,
+      "adresse": "Avenue principale, Moanda",
+      "telephone": "+241 01 45 6789",
+      "email": "contact7@universitÃ©_de_moanda.ga",
+      "site_web": "www.universitÃ©_de_moanda.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Moanda, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 48,
+    "fields": {
+      "nom_etab": "Ã‰cole SupÃ©rieure de Moanda 2",
+      "type_etab": "ecole_sup",
+      "ville": 50,
+      "adresse": "Avenue principale, Moanda",
+      "telephone": "+241 01 45 68810",
+      "email": "contact8@Ã©cole_supÃ©rieure_de_moanda_2.ga",
+      "site_web": "www.Ã©cole_supÃ©rieure_de_moanda_2.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Moanda, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 49,
+    "fields": {
+      "nom_etab": "Institut de Moanda 3",
+      "type_etab": "institut",
+      "ville": 50,
+      "adresse": "Avenue principale, Moanda",
+      "telephone": "+241 01 45 69811",
+      "email": "contact9@institut_de_moanda_3.ga",
+      "site_web": "www.institut_de_moanda_3.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Moanda, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 50,
+    "fields": {
+      "nom_etab": "UniversitÃ© de Mouila",
+      "type_etab": "universite",
+      "ville": 53,
+      "adresse": "Avenue principale, Mouila",
+      "telephone": "+241 01 45 6789",
+      "email": "contact7@universitÃ©_de_mouila.ga",
+      "site_web": "www.universitÃ©_de_mouila.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Mouila, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 51,
+    "fields": {
+      "nom_etab": "Ã‰cole SupÃ©rieure de Mouila 2",
+      "type_etab": "ecole_sup",
+      "ville": 53,
+      "adresse": "Avenue principale, Mouila",
+      "telephone": "+241 01 45 68810",
+      "email": "contact8@Ã©cole_supÃ©rieure_de_mouila_2.ga",
+      "site_web": "www.Ã©cole_supÃ©rieure_de_mouila_2.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Mouila, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 52,
+    "fields": {
+      "nom_etab": "Institut de Mouila 3",
+      "type_etab": "institut",
+      "ville": 53,
+      "adresse": "Avenue principale, Mouila",
+      "telephone": "+241 01 45 69811",
+      "email": "contact9@institut_de_mouila_3.ga",
+      "site_web": "www.institut_de_mouila_3.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Mouila, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 53,
+    "fields": {
+      "nom_etab": "UniversitÃ© de Mounana",
+      "type_etab": "universite",
+      "ville": 51,
+      "adresse": "Avenue principale, Mounana",
+      "telephone": "+241 01 45 6789",
+      "email": "contact7@universitÃ©_de_mounana.ga",
+      "site_web": "www.universitÃ©_de_mounana.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Mounana, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 54,
+    "fields": {
+      "nom_etab": "Ã‰cole SupÃ©rieure de Mounana 2",
+      "type_etab": "ecole_sup",
+      "ville": 51,
+      "adresse": "Avenue principale, Mounana",
+      "telephone": "+241 01 45 68810",
+      "email": "contact8@Ã©cole_supÃ©rieure_de_mounana_2.ga",
+      "site_web": "www.Ã©cole_supÃ©rieure_de_mounana_2.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Mounana, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 55,
+    "fields": {
+      "nom_etab": "Institut de Mounana 3",
+      "type_etab": "institut",
+      "ville": 51,
+      "adresse": "Avenue principale, Mounana",
+      "telephone": "+241 01 45 69811",
+      "email": "contact9@institut_de_mounana_3.ga",
+      "site_web": "www.institut_de_mounana_3.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Mounana, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 56,
+    "fields": {
+      "nom_etab": "UniversitÃ© de Moungoundou",
+      "type_etab": "universite",
+      "ville": 60,
+      "adresse": "Avenue principale, Moungoundou",
+      "telephone": "+241 01 45 6789",
+      "email": "contact7@universitÃ©_de_moungoundou.ga",
+      "site_web": "www.universitÃ©_de_moungoundou.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Moungoundou, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 57,
+    "fields": {
+      "nom_etab": "Ã‰cole SupÃ©rieure de Moungoundou 2",
+      "type_etab": "ecole_sup",
+      "ville": 60,
+      "adresse": "Avenue principale, Moungoundou",
+      "telephone": "+241 01 45 68810",
+      "email": "contact8@Ã©cole_supÃ©rieure_de_moungoundou_2.ga",
+      "site_web": "www.Ã©cole_supÃ©rieure_de_moungoundou_2.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Moungoundou, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 58,
+    "fields": {
+      "nom_etab": "Institut de Moungoundou 3",
+      "type_etab": "institut",
+      "ville": 60,
+      "adresse": "Avenue principale, Moungoundou",
+      "telephone": "+241 01 45 69811",
+      "email": "contact9@institut_de_moungoundou_3.ga",
+      "site_web": "www.institut_de_moungoundou_3.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Moungoundou, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 59,
+    "fields": {
+      "nom_etab": "UniversitÃ© de NdendÃ©",
+      "type_etab": "universite",
+      "ville": 57,
+      "adresse": "Avenue principale, NdendÃ©",
+      "telephone": "+241 01 45 6789",
+      "email": "contact7@universitÃ©_de_ndendÃ©.ga",
+      "site_web": "www.universitÃ©_de_ndendÃ©.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  NdendÃ©, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 60,
+    "fields": {
+      "nom_etab": "Ã‰cole SupÃ©rieure de NdendÃ© 2",
+      "type_etab": "ecole_sup",
+      "ville": 57,
+      "adresse": "Avenue principale, NdendÃ©",
+      "telephone": "+241 01 45 68810",
+      "email": "contact8@Ã©cole_supÃ©rieure_de_ndendÃ©_2.ga",
+      "site_web": "www.Ã©cole_supÃ©rieure_de_ndendÃ©_2.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  NdendÃ©, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 61,
+    "fields": {
+      "nom_etab": "Institut de NdendÃ© 3",
+      "type_etab": "institut",
+      "ville": 57,
+      "adresse": "Avenue principale, NdendÃ©",
+      "telephone": "+241 01 45 69811",
+      "email": "contact9@institut_de_ndendÃ©_3.ga",
+      "site_web": "www.institut_de_ndendÃ©_3.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  NdendÃ©, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 62,
+    "fields": {
+      "nom_etab": "UniversitÃ© de NdjolÃ©",
+      "type_etab": "universite",
+      "ville": 54,
+      "adresse": "Avenue principale, NdjolÃ©",
+      "telephone": "+241 01 45 6789",
+      "email": "contact7@universitÃ©_de_ndjolÃ©.ga",
+      "site_web": "www.universitÃ©_de_ndjolÃ©.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  NdjolÃ©, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 63,
+    "fields": {
+      "nom_etab": "Ã‰cole SupÃ©rieure de NdjolÃ© 2",
+      "type_etab": "ecole_sup",
+      "ville": 54,
+      "adresse": "Avenue principale, NdjolÃ©",
+      "telephone": "+241 01 45 68810",
+      "email": "contact8@Ã©cole_supÃ©rieure_de_ndjolÃ©_2.ga",
+      "site_web": "www.Ã©cole_supÃ©rieure_de_ndjolÃ©_2.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  NdjolÃ©, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 64,
+    "fields": {
+      "nom_etab": "Institut de NdjolÃ© 3",
+      "type_etab": "institut",
+      "ville": 54,
+      "adresse": "Avenue principale, NdjolÃ©",
+      "telephone": "+241 01 45 69811",
+      "email": "contact9@institut_de_ndjolÃ©_3.ga",
+      "site_web": "www.institut_de_ndjolÃ©_3.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  NdjolÃ©, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 65,
+    "fields": {
+      "nom_etab": "UniversitÃ© de Ntoum",
+      "type_etab": "universite",
+      "ville": 48,
+      "adresse": "Avenue principale, Ntoum",
+      "telephone": "+241 01 45 6789",
+      "email": "contact7@universitÃ©_de_ntoum.ga",
+      "site_web": "www.universitÃ©_de_ntoum.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Ntoum, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 66,
+    "fields": {
+      "nom_etab": "Ã‰cole SupÃ©rieure de Ntoum 2",
+      "type_etab": "ecole_sup",
+      "ville": 48,
+      "adresse": "Avenue principale, Ntoum",
+      "telephone": "+241 01 45 68810",
+      "email": "contact8@Ã©cole_supÃ©rieure_de_ntoum_2.ga",
+      "site_web": "www.Ã©cole_supÃ©rieure_de_ntoum_2.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Ntoum, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 67,
+    "fields": {
+      "nom_etab": "Institut de Ntoum 3",
+      "type_etab": "institut",
+      "ville": 48,
+      "adresse": "Avenue principale, Ntoum",
+      "telephone": "+241 01 45 69811",
+      "email": "contact9@institut_de_ntoum_3.ga",
+      "site_web": "www.institut_de_ntoum_3.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Ntoum, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 68,
+    "fields": {
+      "nom_etab": "UniversitÃ© de OmbouÃ©",
+      "type_etab": "universite",
+      "ville": 68,
+      "adresse": "Avenue principale, OmbouÃ©",
+      "telephone": "+241 01 45 6789",
+      "email": "contact7@universitÃ©_de_ombouÃ©.ga",
+      "site_web": "www.universitÃ©_de_ombouÃ©.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  OmbouÃ©, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 69,
+    "fields": {
+      "nom_etab": "Ã‰cole SupÃ©rieure de OmbouÃ© 2",
+      "type_etab": "ecole_sup",
+      "ville": 68,
+      "adresse": "Avenue principale, OmbouÃ©",
+      "telephone": "+241 01 45 68810",
+      "email": "contact8@Ã©cole_supÃ©rieure_de_ombouÃ©_2.ga",
+      "site_web": "www.Ã©cole_supÃ©rieure_de_ombouÃ©_2.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  OmbouÃ©, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 70,
+    "fields": {
+      "nom_etab": "Institut de OmbouÃ© 3",
+      "type_etab": "institut",
+      "ville": 68,
+      "adresse": "Avenue principale, OmbouÃ©",
+      "telephone": "+241 01 45 69811",
+      "email": "contact9@institut_de_ombouÃ©_3.ga",
+      "site_web": "www.institut_de_ombouÃ©_3.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  OmbouÃ©, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 71,
+    "fields": {
+      "nom_etab": "UniversitÃ© de Owendo",
+      "type_etab": "universite",
+      "ville": 47,
+      "adresse": "Avenue principale, Owendo",
+      "telephone": "+241 01 45 6789",
+      "email": "contact7@universitÃ©_de_owendo.ga",
+      "site_web": "www.universitÃ©_de_owendo.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Owendo, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 72,
+    "fields": {
+      "nom_etab": "Ã‰cole SupÃ©rieure de Owendo 2",
+      "type_etab": "ecole_sup",
+      "ville": 47,
+      "adresse": "Avenue principale, Owendo",
+      "telephone": "+241 01 45 68810",
+      "email": "contact8@Ã©cole_supÃ©rieure_de_owendo_2.ga",
+      "site_web": "www.Ã©cole_supÃ©rieure_de_owendo_2.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Owendo, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 73,
+    "fields": {
+      "nom_etab": "Institut de Owendo 3",
+      "type_etab": "institut",
+      "ville": 47,
+      "adresse": "Avenue principale, Owendo",
+      "telephone": "+241 01 45 69811",
+      "email": "contact9@institut_de_owendo_3.ga",
+      "site_web": "www.institut_de_owendo_3.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Owendo, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 74,
+    "fields": {
+      "nom_etab": "UniversitÃ© de Oyem",
+      "type_etab": "universite",
+      "ville": 70,
+      "adresse": "Avenue principale, Oyem",
+      "telephone": "+241 01 45 6789",
+      "email": "contact7@universitÃ©_de_oyem.ga",
+      "site_web": "www.universitÃ©_de_oyem.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Oyem, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 75,
+    "fields": {
+      "nom_etab": "Ã‰cole SupÃ©rieure de Oyem 2",
+      "type_etab": "ecole_sup",
+      "ville": 70,
+      "adresse": "Avenue principale, Oyem",
+      "telephone": "+241 01 45 68810",
+      "email": "contact8@Ã©cole_supÃ©rieure_de_oyem_2.ga",
+      "site_web": "www.Ã©cole_supÃ©rieure_de_oyem_2.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Oyem, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 76,
+    "fields": {
+      "nom_etab": "Institut de Oyem 3",
+      "type_etab": "institut",
+      "ville": 70,
+      "adresse": "Avenue principale, Oyem",
+      "telephone": "+241 01 45 69811",
+      "email": "contact9@institut_de_oyem_3.ga",
+      "site_web": "www.institut_de_oyem_3.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Oyem, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 77,
+    "fields": {
+      "nom_etab": "UniversitÃ© de Port-Gentil 1",
+      "type_etab": "universite",
+      "ville": 67,
+      "adresse": "Avenue principale, Port-Gentil",
+      "telephone": "+241 01 45 6789",
+      "email": "contact7@universitÃ©_de_port-gentil_1.ga",
+      "site_web": "www.universitÃ©_de_port-gentil_1.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Port-Gentil, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 78,
+    "fields": {
+      "nom_etab": "Ã‰cole SupÃ©rieure de Port-Gentil 2",
+      "type_etab": "ecole_sup",
+      "ville": 67,
+      "adresse": "Avenue principale, Port-Gentil",
+      "telephone": "+241 01 45 68810",
+      "email": "contact8@Ã©cole_supÃ©rieure_de_port-gentil_2.ga",
+      "site_web": "www.Ã©cole_supÃ©rieure_de_port-gentil_2.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Port-Gentil, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 79,
+    "fields": {
+      "nom_etab": "UniversitÃ© de Poubara",
+      "type_etab": "universite",
+      "ville": 66,
+      "adresse": "Avenue principale, Poubara",
+      "telephone": "+241 01 45 6789",
+      "email": "contact7@universitÃ©_de_poubara.ga",
+      "site_web": "www.universitÃ©_de_poubara.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Poubara, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 80,
+    "fields": {
+      "nom_etab": "Ã‰cole SupÃ©rieure de Poubara 2",
+      "type_etab": "ecole_sup",
+      "ville": 66,
+      "adresse": "Avenue principale, Poubara",
+      "telephone": "+241 01 45 68810",
+      "email": "contact8@Ã©cole_supÃ©rieure_de_poubara_2.ga",
+      "site_web": "www.Ã©cole_supÃ©rieure_de_poubara_2.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Poubara, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 81,
+    "fields": {
+      "nom_etab": "Institut de Poubara 3",
+      "type_etab": "institut",
+      "ville": 66,
+      "adresse": "Avenue principale, Poubara",
+      "telephone": "+241 01 45 69811",
+      "email": "contact9@institut_de_poubara_3.ga",
+      "site_web": "www.institut_de_poubara_3.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Poubara, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 82,
+    "fields": {
+      "nom_etab": "UniversitÃ© de Tchibanga",
+      "type_etab": "universite",
+      "ville": 58,
+      "adresse": "Avenue principale, Tchibanga",
+      "telephone": "+241 01 45 6789",
+      "email": "contact7@universitÃ©_de_tchibanga.ga",
+      "site_web": "www.universitÃ©_de_tchibanga.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Tchibanga, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 83,
+    "fields": {
+      "nom_etab": "Ã‰cole SupÃ©rieure de Tchibanga 2",
+      "type_etab": "ecole_sup",
+      "ville": 58,
+      "adresse": "Avenue principale, Tchibanga",
+      "telephone": "+241 01 45 68810",
+      "email": "contact8@Ã©cole_supÃ©rieure_de_tchibanga_2.ga",
+      "site_web": "www.Ã©cole_supÃ©rieure_de_tchibanga_2.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Tchibanga, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 84,
+    "fields": {
+      "nom_etab": "Institut de Tchibanga 3",
+      "type_etab": "institut",
+      "ville": 58,
+      "adresse": "Avenue principale, Tchibanga",
+      "telephone": "+241 01 45 69811",
+      "email": "contact9@institut_de_tchibanga_3.ga",
+      "site_web": "www.institut_de_tchibanga_3.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Tchibanga, spÃ©cialisÃ© dans l'enseignement supÃ©rieur.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 229,
+    "fields": {
+      "nom_etab": "UniversitÃ© de Mouila",
+      "type_etab": "universite",
+      "ville": 55,
+      "adresse": "Avenue principale, Mouila",
+      "telephone": "+241 01 45 6789",
+      "email": "contact7@universitÃ©_de_mouila.ga",
+      "site_web": "www.universitÃ©_de_mouila.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Mouila.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 230,
+    "fields": {
+      "nom_etab": "Ã‰cole SupÃ©rieure de Mouila",
+      "type_etab": "ecole_sup",
+      "ville": 55,
+      "adresse": "Avenue principale, Mouila",
+      "telephone": "+241 01 45 68810",
+      "email": "contact8@Ã©cole_supÃ©rieure_de_mouila.ga",
+      "site_web": "www.Ã©cole_supÃ©rieure_de_mouila.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Mouila.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.etablissement",
+    "pk": 231,
+    "fields": {
+      "nom_etab": "Institut de Mouila",
+      "type_etab": "institut",
+      "ville": 55,
+      "adresse": "Avenue principale, Mouila",
+      "telephone": "+241 01 45 69811",
+      "email": "contact9@institut_de_mouila.ga",
+      "site_web": "www.institut_de_mouila.ga",
+      "description": "Ã‰tablissement d'excellence situÃ© Ã  Mouila.",
+      "filieres": [
+        14,
+        12,
+        11,
+        13
+      ],
+      "matieres": [
+        44,
+        47,
+        45,
+        46,
+        49,
+        48,
+        43,
+        42,
+        50,
+        41
+      ],
+      "niveaux": [
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  {
+    "model": "core.inscription",
+    "pk": 1,
+    "fields": {
+      "user": [
+        "NANA"
+      ],
+      "telephone": "066248725",
+      "date_naissance": "2003-07-19",
+      "lieu_naissance": "BITAM",
+      "nationalite": "Gabonaise",
+      "niveau_etude": "Licence 3",
+      "etablissement_origine": "INPTIC"
+    }
+  },
+  {
+    "model": "core.enseignant",
+    "pk": 1,
+    "fields": {
+      "user": [
+        "enseignant"
+      ],
+      "specialite": "IngÃ©nieur informatique",
+      "grade": "Docteur",
+      "etablissement": 7,
+      "matieres": []
+    }
+  },
+  {
+    "model": "core.enseignant",
+    "pk": 2,
+    "fields": {
+      "user": [
+        "jean.mbarga_14"
+      ],
+      "specialite": "Expert en Droit privÃ©",
+      "grade": "Professeur",
+      "etablissement": 11,
+      "matieres": [
+        44,
+        47,
+        45
+      ]
+    }
+  },
+  {
+    "model": "core.enseignant",
+    "pk": 3,
+    "fields": {
+      "user": [
+        "marie.ondo_14"
+      ],
+      "specialite": "Expert en Droit privÃ©",
+      "grade": "MaÃ®tre de ConfÃ©rences",
+      "etablissement": 14,
+      "matieres": [
+        44,
+        47,
+        45
+      ]
+    }
+  },
+  {
+    "model": "core.enseignant",
+    "pk": 4,
+    "fields": {
+      "user": [
+        "pierre.nguema_14"
+      ],
+      "specialite": "Expert en Droit privÃ©",
+      "grade": "Assistant",
+      "etablissement": 17,
+      "matieres": [
+        44,
+        47,
+        45
+      ]
+    }
+  },
+  {
+    "model": "core.enseignant",
+    "pk": 5,
+    "fields": {
+      "user": [
+        "jean.mbarga_12"
+      ],
+      "specialite": "Expert en Gestion Administrative",
+      "grade": "Professeur",
+      "etablissement": 11,
+      "matieres": [
+        44,
+        47,
+        45
+      ]
+    }
+  },
+  {
+    "model": "core.enseignant",
+    "pk": 6,
+    "fields": {
+      "user": [
+        "marie.ondo_12"
+      ],
+      "specialite": "Expert en Gestion Administrative",
+      "grade": "MaÃ®tre de ConfÃ©rences",
+      "etablissement": 14,
+      "matieres": [
+        44,
+        47,
+        45
+      ]
+    }
+  },
+  {
+    "model": "core.enseignant",
+    "pk": 7,
+    "fields": {
+      "user": [
+        "pierre.nguema_12"
+      ],
+      "specialite": "Expert en Gestion Administrative",
+      "grade": "Assistant",
+      "etablissement": 17,
+      "matieres": [
+        44,
+        47,
+        45
+      ]
+    }
+  },
+  {
+    "model": "core.enseignant",
+    "pk": 8,
+    "fields": {
+      "user": [
+        "jean.mbarga_11"
+      ],
+      "specialite": "Expert en Informatique",
+      "grade": "Professeur",
+      "etablissement": 11,
+      "matieres": [
+        44,
+        47,
+        45
+      ]
+    }
+  },
+  {
+    "model": "core.enseignant",
+    "pk": 9,
+    "fields": {
+      "user": [
+        "marie.ondo_11"
+      ],
+      "specialite": "Expert en Informatique",
+      "grade": "MaÃ®tre de ConfÃ©rences",
+      "etablissement": 14,
+      "matieres": [
+        44,
+        47,
+        45
+      ]
+    }
+  },
+  {
+    "model": "core.enseignant",
+    "pk": 10,
+    "fields": {
+      "user": [
+        "pierre.nguema_11"
+      ],
+      "specialite": "Expert en Informatique",
+      "grade": "Assistant",
+      "etablissement": 17,
+      "matieres": [
+        44,
+        47,
+        45
+      ]
+    }
+  },
+  {
+    "model": "core.enseignant",
+    "pk": 11,
+    "fields": {
+      "user": [
+        "jean.mbarga_13"
+      ],
+      "specialite": "Expert en Science Ã©conomie",
+      "grade": "Professeur",
+      "etablissement": 11,
+      "matieres": [
+        44,
+        47,
+        45
+      ]
+    }
+  },
+  {
+    "model": "core.enseignant",
+    "pk": 12,
+    "fields": {
+      "user": [
+        "marie.ondo_13"
+      ],
+      "specialite": "Expert en Science Ã©conomie",
+      "grade": "MaÃ®tre de ConfÃ©rences",
+      "etablissement": 14,
+      "matieres": [
+        44,
+        47,
+        45
+      ]
+    }
+  },
+  {
+    "model": "core.enseignant",
+    "pk": 13,
+    "fields": {
+      "user": [
+        "pierre.nguema_13"
+      ],
+      "specialite": "Expert en Science Ã©conomie",
+      "grade": "Assistant",
+      "etablissement": 17,
+      "matieres": [
+        44,
+        47,
+        45
+      ]
+    }
+  },
+  {
+    "model": "core.supportcours",
+    "pk": 1,
+    "fields": {
+      "titre": "Initiation Ã  l'algo",
+      "description": "",
+      "matiere": 44,
+      "enseignant": 1,
+      "fichier_support": "supports/Cours_WebTV_Marvel_ND_MMi_L2_2023_240604_152505.pdf",
+      "date_ajout": "2026-05-12T15:56:09.870Z"
+    }
+  },
+  {
+    "model": "core.supportcours",
+    "pk": 2,
+    "fields": {
+      "titre": "Cours du droit des aff",
+      "description": "Le Droit des affaires forme des spÃ©cialistes des rÃ¨gles juridiques qui encadrent lÂ’activitÃ© des entreprises afin de prÃ©venir les risques, sÃ©curiser les transactions et accompagner le dÃ©veloppement des organisations.",
+      "matiere": 49,
+      "enseignant": 3,
+      "fichier_support": "supports/GdP_SUPPORT_MMI2_FI2.pdf",
+      "date_ajout": "2026-05-12T17:20:15.634Z"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2026-05-12T15:48:27.154Z",
+      "user": [
+        "admin"
+      ],
+      "content_type": [
+        "core",
+        "filiere"
+      ],
+      "object_id": "14",
+      "object_repr": "Droi privÃ©",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2026-05-12T15:48:49.582Z",
+      "user": [
+        "admin"
+      ],
+      "content_type": [
+        "core",
+        "filiere"
+      ],
+      "object_id": "14",
+      "object_repr": "Droit privÃ©",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Nom de la fili\\u00e8re\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2026-05-12T15:49:59.207Z",
+      "user": [
+        "admin"
+      ],
+      "content_type": [
+        "core",
+        "filiere"
+      ],
+      "object_id": "13",
+      "object_repr": "Science Ã©conomie",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Nom de la fili\\u00e8re\", \"Code de la fili\\u00e8re\", \"Description\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2026-05-12T15:50:36.609Z",
+      "user": [
+        "admin"
+      ],
+      "content_type": [
+        "core",
+        "filiere"
+      ],
+      "object_id": "12",
+      "object_repr": "Gestion Administrative",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Nom de la fili\\u00e8re\", \"Code de la fili\\u00e8re\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2026-05-12T15:50:57.441Z",
+      "user": [
+        "admin"
+      ],
+      "content_type": [
+        "core",
+        "filiere"
+      ],
+      "object_id": "11",
+      "object_repr": "Informatique",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Code de la fili\\u00e8re\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2026-05-12T15:55:45.338Z",
+      "user": [
+        "admin"
+      ],
+      "content_type": [
+        "core",
+        "enseignant"
+      ],
+      "object_id": "1",
+      "object_repr": "Jean Mboumba - IngÃ©nieur informatique",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2026-05-12T15:56:09.871Z",
+      "user": [
+        "admin"
+      ],
+      "content_type": [
+        "core",
+        "supportcours"
+      ],
+      "object_id": "1",
+      "object_repr": "Initiation Ã  l'algo",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2026-05-12T17:20:15.636Z",
+      "user": [
+        "admin"
+      ],
+      "content_type": [
+        "core",
+        "supportcours"
+      ],
+      "object_id": "2",
+      "object_repr": "Cours du droit des aff",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  }
+]
