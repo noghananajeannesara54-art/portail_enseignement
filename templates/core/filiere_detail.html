@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load custom_filters %}
 
 {% block title %}{{ filiere.nom_filiere }}{% endblock %}
 
@@ -85,7 +86,7 @@
                                             </p>
                                             
                                             {% if matiere_data.matiere.description %}
-                                                <p class="card-text small">{{ matiere_data.matiere.description|truncatewords:10|safe }}</p>
+                                                <p class="card-text small">{{ matiere_data.matiere.description|fix_encoding|truncatewords:10|safe }}</p>
                                             {% endif %}
                                             
                                             <div class="d-flex justify-content-between align-items-center">
