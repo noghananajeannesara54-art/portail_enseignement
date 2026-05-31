@@ -61,23 +61,25 @@ def ville_detail(request, pk):
 
 def etablissement_detail(request, pk):
     """Vue pour afficher les détails d'un établissement"""
-    etablissement = get_object_or_404(Etablissement.objects.select_related('ville').prefetch_related('ville__province', 'filieres__niveaux'), pk=pk)
-    
-    # Récupérer les filières de l'établissement
+
+    etablissement = get_object_or_404(
+        Etablissement.objects
+        .select_related('ville')
+        .prefetch_related('filieres', 'niveaux'),
+        pk=pk
+    )
+
     filieres = etablissement.filieres.all()
-    
-    # Calculer le total des niveaux pour cet établissement
-    total_niveaux = 0
-    for filiere in filieres:
-        total_niveaux += filiere.niveaux.count()
-    
+
+    total_niveaux = etablissement.niveaux.count()
+
     context = {
         'etablissement': etablissement,
         'filieres': filieres,
         'total_niveaux': total_niveaux,
     }
-    return render(request, 'core/etablissement_detail.html', context)
 
+    return render(request, 'core/etablissement_detail.html', context)
 
 def filiere_detail(request, pk):
     """Vue pour afficher les détails d'une filière avec niveaux et matières"""
