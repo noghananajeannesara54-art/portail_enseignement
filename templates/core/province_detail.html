@@ -76,7 +76,7 @@
                         <div class="col-md-8">
                             <h6 class="mb-3" style="color: #009739;">Code: {{ province.code_province }}</h6>
                             {% if province.description %}
-                                <p>{{ province.description|fix_encoding|safe }}</p>
+                                <p>{{ province.description|safe }}</p>
                             {% else %}
                                 <p class="text-muted">Aucune description disponible.</p>
                             {% endif %}
