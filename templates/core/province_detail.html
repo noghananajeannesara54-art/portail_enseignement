@@ -26,15 +26,7 @@
                         </div>
                         <div class="col-6">
                             <div class="stat-box">
-                                <h3 class="h2 text-white mb-1">
-                                    {% with total_etab=0 %}
-                                        {% for ville in province.villes.all %}
-                                            {% with total_etab=total_etab|add:ville.etablissements.count %}
-                                            {% endwith %}
-                                        {% endfor %}
-                                        {{ total_etab }}
-                                    {% endwith %}
-                                </h3>
+                                <h3 class="h2 text-white mb-1">{{ total_etablissements }}</h3>
                                 <p class="text-white-50 mb-0">Établissements</p>
                             </div>
                         </div>
@@ -84,7 +76,7 @@
                         <div class="col-md-8">
                             <h6 class="mb-3" style="color: #009739;">Code: {{ province.code_province }}</h6>
                             {% if province.description %}
-                                <p>{{ province.description }}</p>
+                                <p>{{ province.description|safe }}</p>
                             {% else %}
                                 <p class="text-muted">Aucune description disponible.</p>
                             {% endif %}

@@ -27,7 +27,7 @@
                         </div>
                         <div class="col-6">
                             <div class="stat-box">
-                                <h3 class="h3 text-white mb-1">0</h3>
+                                <h3 class="h3 text-white mb-1">{{ total_filieres }}</h3>
                                 <p class="text-white-50 mb-0">Filières</p>
                             </div>
                         </div>
@@ -76,7 +76,7 @@
                         <div class="col-md-8">
                             <h6 class="text-primary mb-3">Province: {{ ville.province.nom_province }}</h6>
                             {% if ville.description %}
-                                <p>{{ ville.description }}</p>
+                                <p>{{ ville.description|safe }}</p>
                             {% else %}
                                 <p class="text-muted">Aucune description disponible.</p>
                             {% endif %}

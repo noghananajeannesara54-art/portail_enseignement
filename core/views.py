@@ -31,35 +31,50 @@ def province_detail(request, pk):
     """Vue pour afficher les détails d'une province"""
     province = get_object_or_404(Province.objects.prefetch_related('villes__etablissements'), pk=pk)
     
+    # Calculer le total des établissements pour cette province
+    total_etablissements = sum(ville.etablissements.count() for ville in province.villes.all())
+    
     context = {
         'province': province,
         'villes': province.villes.all(),
+        'total_etablissements': total_etablissements,
     }
     return render(request, 'core/province_detail.html', context)
 
 
 def ville_detail(request, pk):
     """Vue pour afficher les détails d'une ville"""
-    ville = get_object_or_404(Ville.objects.prefetch_related('etablissements'), pk=pk)
+    ville = get_object_or_404(Ville.objects.prefetch_related('etablissements__filieres'), pk=pk)
+    
+    # Calculer le total des filières pour cette ville
+    total_filieres = 0
+    for etab in ville.etablissements.all():
+        total_filieres += etab.filieres.count()
     
     context = {
         'ville': ville,
         'etablissements': ville.etablissements.all(),
+        'total_filieres': total_filieres,
     }
     return render(request, 'core/ville_detail.html', context)
 
 
 def etablissement_detail(request, pk):
     """Vue pour afficher les détails d'un établissement"""
-    etablissement = get_object_or_404(Etablissement.objects.select_related('ville').prefetch_related('ville__province'), pk=pk)
+    etablissement = get_object_or_404(Etablissement.objects.select_related('ville').prefetch_related('ville__province', 'filieres__niveaux'), pk=pk)
     
-    # Récupérer toutes les filières disponibles (pas directement liées à l'établissement)
-    from core.models import Filiere
-    filieres = Filiere.objects.all()
+    # Récupérer les filières de l'établissement
+    filieres = etablissement.filieres.all()
+    
+    # Calculer le total des niveaux pour cet établissement
+    total_niveaux = 0
+    for filiere in filieres:
+        total_niveaux += filiere.niveaux.count()
     
     context = {
         'etablissement': etablissement,
         'filieres': filieres,
+        'total_niveaux': total_niveaux,
     }
     return render(request, 'core/etablissement_detail.html', context)
 
@@ -218,32 +233,37 @@ def profile(request):
 
 def register(request):
     """Vue pour l'inscription des utilisateurs"""
+    
     if request.method == 'POST':
         user_form = CustomUserCreationForm(request.POST)
         inscription_form = InscriptionForm(request.POST)
-        
+
         if user_form.is_valid() and inscription_form.is_valid():
-            # Créer l'utilisateur
             user = user_form.save()
-            
-            # Créer l'inscription
+
             inscription = inscription_form.save(commit=False)
             inscription.user = user
             inscription.save()
-            
-            messages.success(request, 'Votre compte a été créé avec succès ! Vous pouvez maintenant vous connecter.')
+
+            messages.success(request, "Compte créé avec succès !")
             return redirect('core:login')
+
+        else:
+            # 🔴 IMPORTANT : voir les erreurs
+            print(user_form.errors)
+            print(inscription_form.errors)
+
+            messages.error(request, "Veuillez corriger les erreurs du formulaire.")
+
     else:
         user_form = CustomUserCreationForm()
         inscription_form = InscriptionForm()
-    
-    context = {
+
+    return render(request, 'core/register.html', {
         'user_form': user_form,
         'inscription_form': inscription_form,
-    }
-    return render(request, 'core/register.html', context)
-
-
+    })
+    
 @login_required
 @user_passes_test(lambda u: u.is_staff)
 def edit_province(request, pk):

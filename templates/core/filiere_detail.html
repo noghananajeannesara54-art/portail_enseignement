@@ -33,7 +33,7 @@
     </div>
     <div class="card-body">
         {% if filiere.description %}
-            <p>{{ filiere.description }}</p>
+            <p>{{ filiere.description|safe }}</p>
         {% else %}
             <p class="text-muted">Aucune description disponible pour cette filière.</p>
         {% endif %}
@@ -85,7 +85,7 @@
                                             </p>
                                             
                                             {% if matiere_data.matiere.description %}
-                                                <p class="card-text small">{{ matiere_data.matiere.description|truncatewords:10 }}</p>
+                                                <p class="card-text small">{{ matiere_data.matiere.description|truncatewords:10|safe }}</p>
                                             {% endif %}
                                             
                                             <div class="d-flex justify-content-between align-items-center">
